@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useRef } from "react";
 import {
   DateTimePicker,
@@ -89,6 +90,28 @@ export default function App() {
               linkedPicker1Ref.current &&
                 linkedPicker1Ref.current.datetimepicker("maxDate", e.date);
             }}
+          />
+        </div>
+        <div>
+          <h2>Custom Icons</h2>
+          <DateTimePicker
+            iconClassName="fa-birthday-cake"
+            icons={{
+              time: "fa fa-hourglass-half",
+              date: "fa fa-birthday-cake",
+              up: "fa fa-chevron-circle-up",
+              down: "fa fa-chevron-circle-down",
+            }}
+          />
+        </div>
+        <div>
+          <h2>Event Listeners</h2>
+          <DateTimePicker
+            onHide={e => console.log("onHide", e)}
+            onShow={e => console.log("onShow", e)}
+            onChange={e => console.log("onChange", e)}
+            onError={e => console.log("onError", e)}
+            onUpdate={e => console.log("onUpdate", e)}
           />
         </div>
       </div>
