@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   DateTimePicker,
   TimePicker,
@@ -10,13 +10,15 @@ import styles from "./App.module.scss";
 import moment from "moment";
 
 export default function App() {
+  const linkedPicker1Ref = useRef();
+  const linkedPicker2Ref = useRef();
   return (
     <div className={styles.App}>
       <h1>react-tempusdominus-bootstrap</h1>
       <hr />
       <div className={styles.components}>
         <div>
-          <h2>Locale</h2>
+          <h2>i18n</h2>
           <DateTimePicker locale="ru" />
         </div>
         <div>
@@ -73,8 +75,21 @@ export default function App() {
         </div>
         <div>
           <h2>Linked Pickers</h2>
-          <DateTimePicker />
-          <DateTimePicker useCurrent={false} />
+          <DateTimePicker
+            pickerRef={linkedPicker1Ref}
+            onChange={e => {
+              linkedPicker2Ref.current &&
+                linkedPicker2Ref.current.datetimepicker("minDate", e.date);
+            }}
+          />
+          <DateTimePicker
+            useCurrent={false}
+            pickerRef={linkedPicker2Ref}
+            onChange={e => {
+              linkedPicker1Ref.current &&
+                linkedPicker1Ref.current.datetimepicker("maxDate", e.date);
+            }}
+          />
         </div>
       </div>
     </div>

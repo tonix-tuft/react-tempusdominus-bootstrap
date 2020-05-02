@@ -29,6 +29,7 @@ import getPicker from "./getPicker";
  * Destroys a picker.
  *
  * @param {string} id The ID of the picker to destroy.
+ * @return {undefined}
  */
 export default function destroy(id) {
   getPicker(id).datetimepicker("destroy");

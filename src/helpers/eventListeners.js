@@ -23,12 +23,30 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+import getPicker from "./getPicker";
+
 /**
- * Returns the ID selector for the given ID.
- *
- * @param {string} id An ID.
- * @return {string} The ID selector.
+ * @type {Object}
  */
-export default function selectorId(id) {
-  return `#${id}`;
+const eventsMap = {
+  onHide: "hide.datetimepicker",
+  onShow: "show.datetimepicker",
+  onChange: "change.datetimepicker",
+  onError: "error.datetimepicker",
+  onUpdate: "update.datetimepicker",
+};
+
+export function turnOnEventListeners(id, eventListenersTuples) {
+  const $picker = getPicker(id);
+  for (const [eventListenerName, eventListener] of eventListenersTuples) {
+    const event = eventsMap[eventListenerName];
+    $picker.on(event, eventListener);
+  }
+}
+
+export function turnOffEventListeners(id) {
+  const $picker = getPicker(id);
+  Object.keys(eventsMap).map(eventListenerName =>
+    $picker.off(eventsMap[eventListenerName])
+  );
 }

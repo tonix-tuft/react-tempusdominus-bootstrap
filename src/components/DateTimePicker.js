@@ -32,6 +32,8 @@ import {
   useCumulativeShallowDiff,
   useUnmountEffect,
   usePrevious,
+  useCallbackRef,
+  useMountEffect,
 } from "react-js-utl/hooks";
 import { useLocale } from "react-moment-hooks";
 import { updateFactory, initFactory } from "../factories/initUpdateFactory";
@@ -41,16 +43,43 @@ import "tempusdominus-bootstrap";
 import styles from "../styles.scss";
 import destroy from "../helpers/destroy";
 import { yesInlineFactory, noInlineFactory } from "../factories/inlineFactory";
+import {
+  turnOffEventListeners,
+  turnOnEventListeners,
+} from "../helpers/eventListeners";
+import getPicker from "../helpers/getPicker";
 
 const DateTimePicker = function DateTimePicker({
   className = void 0,
   autocomplete = "off",
   iconClassName = "fa-calendar",
   noIcon = false,
+  pickerRef = void 0,
+  onHide = () => {},
+  onShow = () => {},
+  onChange = () => {},
+  onError = () => {},
+  onUpdate = () => {},
   ...options
 } = {}) {
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
+
+  const onHideRef = useCallbackRef(onHide);
+  const onShowRef = useCallbackRef(onShow);
+  const onChangeRef = useCallbackRef(onChange);
+  const onErrorRef = useCallbackRef(onError);
+  const onUpdateRef = useCallbackRef(onUpdate);
+
+  useMountEffect(() => {
+    turnOnEventListeners(id, [
+      ["onHide", onHideRef.current],
+      ["onShow", onShowRef.current],
+      ["onChange", onChangeRef.current],
+      ["onError", onErrorRef.current],
+      ["onUpdate", onUpdateRef.current],
+    ]);
+  });
 
   options = useCumulativeShallowDiff(options);
 
@@ -85,12 +114,19 @@ const DateTimePicker = function DateTimePicker({
     isUpdate && initUpdateFactory.setOptions(id)(options);
   }, [isUpdate, initUpdateFactory, id, options]);
 
+  useEffect(() => {
+    pickerRef && (pickerRef.current = getPicker(id));
+  }, [pickerRef, id]);
+
   useMemo(() => isUpdate && prevId !== id && destroy(id), [
     isUpdate,
     prevId,
     id,
   ]);
-  useUnmountEffect(() => destroy(id));
+  useUnmountEffect(() => {
+    turnOffEventListeners(id);
+    destroy(id);
+  });
 
   return (
     <div className={classNames(styles.dateTimePicker, className)}>
