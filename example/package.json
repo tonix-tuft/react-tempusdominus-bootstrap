@@ -17,7 +17,7 @@
     "react-scripts": "^3.4.1",
     "react-tempusdominus-bootstrap": "file:..",
     "tempusdominus": "^5.7.0",
-    "tempusdominus-bootstrap": "^5.14.1"
+    "tempusdominus-bootstrap": "^5.15.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
