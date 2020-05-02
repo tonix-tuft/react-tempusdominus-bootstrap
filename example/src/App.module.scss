@@ -7,6 +7,20 @@
   width: 300px;
 }
 
-.components > .inlinePicker {
+.components > div {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.components > div > div {
+  margin-bottom: 20px;
+}
+
+.components .inlinePicker {
   width: 800px;
+}
+
+h2 {
+  width: 800px;
+  margin-bottom: 20px;
 }
