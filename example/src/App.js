@@ -51,6 +51,14 @@ export default function App() {
           <DatePicker allowMultidate multidateSeparator=" · " />
         </div>
         <div>
+          <h2>Side By Side</h2>
+          <DateTimePicker sideBySide />
+        </div>
+        <div>
+          <h2>With Seconds</h2>
+          <DateTimePicker format="YYYY-MM-DD HH:mm:ss" />
+        </div>
+        <div>
           <h2>Inline Date Time Picker</h2>
           <InlineDateTimePicker />
         </div>
