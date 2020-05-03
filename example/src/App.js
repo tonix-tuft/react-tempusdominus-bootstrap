@@ -79,16 +79,14 @@ export default function App() {
           <DateTimePicker
             pickerRef={linkedPicker1Ref}
             onChange={e => {
-              linkedPicker2Ref.current &&
-                linkedPicker2Ref.current.datetimepicker("minDate", e.date);
+              linkedPicker2Ref.current.datetimepicker("minDate", e.date);
             }}
           />
           <DateTimePicker
             useCurrent={false}
             pickerRef={linkedPicker2Ref}
             onChange={e => {
-              linkedPicker1Ref.current &&
-                linkedPicker1Ref.current.datetimepicker("maxDate", e.date);
+              linkedPicker1Ref.current.datetimepicker("maxDate", e.date);
             }}
           />
         </div>
