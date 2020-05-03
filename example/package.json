@@ -11,6 +11,7 @@
     "moment": "~2.24.0",
     "moment-utl": "^2.6.0",
     "popper.js": "^1.16.1",
+    "prismjs": "^1.20.0",
     "prop-types": "^15.6.2",
     "react": "file:../node_modules/react",
     "react-dom": "^16.4.1",
