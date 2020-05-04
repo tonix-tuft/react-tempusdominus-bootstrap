@@ -9,6 +9,7 @@ import {
 } from "react-tempusdominus-bootstrap";
 import styles from "./App.module.scss";
 import moment from "moment";
+import PrismCode from "./code/PrismCode";
 
 export default function App() {
   const linkedPicker1Ref = useRef();
@@ -21,6 +22,13 @@ export default function App() {
         <div>
           <h2>i18n</h2>
           <DateTimePicker locale="ru" />
+          <PrismCode codeClassName="language-javascript" lineHighlight="2, 5">
+            {`import React from "react";
+import { DateTimePicker } from "react-tempusdominus-bootstrap";
+
+export default () =>
+  <DateTimePicker locale="ru" />;`}
+          </PrismCode>
         </div>
         <div>
           <h2>Time Only</h2>

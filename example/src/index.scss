@@ -8,3 +8,32 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.prism-code {
+  width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  pre,
+  pre[class*="language-"] {
+    margin: 0;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    background: transparent;
+  }
+
+  .line-highlight {
+    box-shadow: inset 5px 0 0 #00bcd4;
+    background: hsla(0, 0%, 98%, 0.1);
+    background: linear-gradient(
+      to right,
+      hsla(0, 0%, 98%, 0.1) 70%,
+      hsla(24, 20%, 50%, 0)
+    );
+  }
+}

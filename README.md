@@ -16,7 +16,7 @@ npm install --save react-tempusdominus-bootstrap
 import React from "react";
 import ExampleComponent from "react-tempusdominus-bootstrap";
 
-function Example() {
+export default function Example() {
   return <ExampleComponent text="Modern React component module" />;
 }
 ```
