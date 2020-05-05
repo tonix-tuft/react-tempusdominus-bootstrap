@@ -31,7 +31,7 @@ export default () =>
           </PrismCode>
         </div>
         <div>
-          <h2>Time Only</h2>
+          <h2>Time Picker</h2>
           <TimePicker />
           <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
             {`import React from "react";
@@ -42,7 +42,7 @@ export default () =>
           </PrismCode>
         </div>
         <div>
-          <h2>Date Only</h2>
+          <h2>Date Picker</h2>
           <DatePicker />
           <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
             {`import React from "react";
