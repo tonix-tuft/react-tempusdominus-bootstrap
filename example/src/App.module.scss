@@ -64,7 +64,9 @@ hr,
 }
 
 .components .inlinePicker {
-  width: 800px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
 }
 
 h2 {

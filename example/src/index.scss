@@ -2,6 +2,8 @@
 @import "~font-awesome";
 // @import "~tempusdominus-bootstrap/build/css/tempusdominus-bootstrap.css";
 @import "~tempusdominus-bootstrap/src/sass/tempusdominus-bootstrap.scss";
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "~prismjs/plugins/line-highlight/prism-line-highlight.css";
 
 body {
   margin: 0;
@@ -10,7 +12,7 @@ body {
 }
 
 .prism-code {
-  width: 800px;
+  max-width: 800px;
   border-radius: 10px;
   overflow: hidden;
 

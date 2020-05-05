@@ -6,8 +6,6 @@ import { classNames } from "react-js-utl/utils";
 import { useUniqueKey } from "react-js-utl/hooks";
 import "prismjs/plugins/line-numbers/prism-line-numbers";
 import "prismjs/plugins/line-highlight/prism-line-highlight";
-import "../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css";
-import "../../node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css";
 import "prismjs/components/prism-jsx";
 
 const PrismCode = compose(React.memo)(function PrismCode({
@@ -29,7 +27,7 @@ const PrismCode = compose(React.memo)(function PrismCode({
         className={classNames(codeClassName, withLineNumbers && "line-numbers")}
         data-line={lineHighlight || void 0}
       >
-        <code className={codeClassName}>{children}</code>
+        <code className={codeClassName}>{(children + "").trim()}</code>
       </pre>
     </div>
   );
