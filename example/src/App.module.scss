@@ -4,7 +4,12 @@
 
 .components > * {
   padding-bottom: 30px;
-  width: 300px;
+}
+
+hr,
+.components > hr {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .components > div {
@@ -16,11 +21,20 @@
   margin-bottom: 20px;
 }
 
+.components .picker {
+  width: 300px;
+}
+
 .components .inlinePicker {
   width: 800px;
 }
 
 h2 {
-  width: 800px;
+  a,
+  a:hover {
+    color: #212529;
+  }
+  display: inline-block;
+  padding-top: 15px;
   margin-bottom: 20px;
 }
