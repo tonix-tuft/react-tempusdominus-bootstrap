@@ -16,7 +16,17 @@ export default function App() {
   const linkedPicker2Ref = useRef();
   return (
     <div className={styles.App}>
-      <h1>react-tempusdominus-bootstrap</h1>
+      <div className={styles.heading}>
+        <h1>react-tempusdominus-bootstrap</h1>
+        <div>
+          <a href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap">
+            <i className="fa fa-github" />
+          </a>
+          <a href="https://www.npmjs.com/package/react-tempusdominus-bootstrap">
+            <div className={styles.npm} />
+          </a>
+        </div>
+      </div>
       <hr />
       <div className={styles.components}>
         <div>
