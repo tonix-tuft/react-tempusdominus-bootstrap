@@ -1,7 +1,8 @@
 @import "~bootstrap";
 @import "~font-awesome";
 // @import "~tempusdominus-bootstrap/build/css/tempusdominus-bootstrap.css";
-@import "~tempusdominus-bootstrap/src/sass/tempusdominus-bootstrap.scss";
+// @import "tempusdominus-bootstrap/src/sass/tempusdominus-bootstrap-build.scss";
+@import "~tempusdominus-bootstrap/src/sass/tempusdominus-bootstrap-build.scss"; // Or one of the above.
 @import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
 @import "~prismjs/plugins/line-highlight/prism-line-highlight.css";
 
