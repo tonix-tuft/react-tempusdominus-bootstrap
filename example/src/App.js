@@ -396,6 +396,11 @@ export default () => (
           </PrismCode>
         </div>
       </div>
+      <footer>
+        <small className={styles.copyright}>
+          Copyright © {moment().format("YYYY")} Anton Bagdatyev (Tonix)
+        </small>
+      </footer>
     </div>
   );
 }
