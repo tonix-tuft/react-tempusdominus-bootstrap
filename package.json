@@ -36,7 +36,6 @@
     "publish-major": "npm run prepare && npm version major && npm publish && git push && git push --tags"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0",
     "font-awesome": "^4.0.0",
@@ -111,6 +110,7 @@
     "dist"
   ],
   "dependencies": {
+    "prop-types": "^15.7.2",
     "immutable-linked-ordered-map": "^1.8.0",
     "react-js-utl": "^1.42.0",
     "react-moment-hooks": "^2.12.0",
