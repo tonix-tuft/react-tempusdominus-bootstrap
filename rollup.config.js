@@ -26,6 +26,7 @@ export default {
       sourcemap: true,
     },
   ],
+  external: ["prop-types"],
   plugins: [
     external(),
     postcss({
