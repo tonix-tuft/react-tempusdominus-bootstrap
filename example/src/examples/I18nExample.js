@@ -8,7 +8,9 @@ export default function I18nExample({ noHr = false }) {
     <>
       <div>
         <h2 id="i18n">
-          <a href="#i18n">i18n</a>
+          <a className={styles.fragmentLink} href="#i18n">
+            i18n
+          </a>
         </h2>
         <div className={styles.picker}>
           <DateTimePicker locale="ru" />

@@ -1,9 +1,14 @@
 .App {
   padding: 20px;
 
-  a,
-  a:hover {
+  a.fragmentLink,
+  a.fragmentLink:hover {
     color: #212529;
+  }
+
+  a.GitHub,
+  a.GitHub:hover {
+    color: #181515;
   }
 }
 

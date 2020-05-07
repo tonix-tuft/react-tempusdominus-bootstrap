@@ -21,7 +21,10 @@ export default function App() {
       <div className={styles.heading}>
         <h1>react-tempusdominus-bootstrap</h1>
         <div>
-          <a href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap">
+          <a
+            className={styles.GitHub}
+            href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap"
+          >
             <i className="fa fa-github" />
           </a>
           <a href="https://www.npmjs.com/package/react-tempusdominus-bootstrap">
@@ -36,7 +39,9 @@ export default function App() {
 
         <div>
           <h2 id="time-picker">
-            <a href="#time-picker">Time Picker</a>
+            <a className={styles.fragmentLink} href="#time-picker">
+              Time Picker
+            </a>
           </h2>
           <div className={styles.picker}>
             <TimePicker />
@@ -53,7 +58,9 @@ export default () =>
 
         <div>
           <h2 id="date-picker">
-            <a href="#date-picker">Date Picker</a>
+            <a className={styles.fragmentLink} href="#date-picker">
+              Date Picker
+            </a>
           </h2>
           <div className={styles.picker}>
             <DatePicker />
@@ -70,7 +77,9 @@ export default () =>
 
         <div>
           <h2 id="month-picker">
-            <a href="#month-picker">Month Picker</a>
+            <a className={styles.fragmentLink} href="#month-picker">
+              Month Picker
+            </a>
           </h2>
           <div className={styles.picker}>
             <MonthPicker />
@@ -87,7 +96,9 @@ export default () =>
 
         <div>
           <h2 id="no-icon">
-            <a href="#no-icon">No Icon</a>
+            <a className={styles.fragmentLink} href="#no-icon">
+              No Icon
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker noIcon />
@@ -104,7 +115,9 @@ export default () =>
 
         <div>
           <h2 id="default-date">
-            <a href="#default-date">Default Date</a>
+            <a className={styles.fragmentLink} href="#default-date">
+              Default Date
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker defaultDate="2020-05-26" />
@@ -121,7 +134,9 @@ export default () =>
 
         <div>
           <h2 id="multidate">
-            <a href="#multidate">Multidate</a>
+            <a className={styles.fragmentLink} href="#multidate">
+              Multidate
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker allowMultidate />
@@ -138,7 +153,12 @@ export default () =>
 
         <div>
           <h2 id="custom-multidate-separator">
-            <a href="#custom-multidate-separator">Custom Multidate Separator</a>
+            <a
+              className={styles.fragmentLink}
+              href="#custom-multidate-separator"
+            >
+              Custom Multidate Separator
+            </a>
           </h2>
           <div className={styles.picker}>
             <DatePicker allowMultidate multidateSeparator=" · " />
@@ -155,7 +175,9 @@ export default () =>
 
         <div>
           <h2 id="side-by-side">
-            <a href="#side-by-side">Side By Side</a>
+            <a className={styles.fragmentLink} href="#side-by-side">
+              Side By Side
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker sideBySide />
@@ -172,7 +194,9 @@ export default () =>
 
         <div>
           <h2 id="with-seconds">
-            <a href="#with-seconds">With Seconds</a>
+            <a className={styles.fragmentLink} href="#with-seconds">
+              With Seconds
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker format="YYYY-MM-DD HH:mm:ss" />
@@ -189,7 +213,9 @@ export default () =>
 
         <div>
           <h2 id="inline-date-time-picker">
-            <a href="#inline-date-time-picker">Inline Date Time Picker</a>
+            <a className={styles.fragmentLink} href="#inline-date-time-picker">
+              Inline Date Time Picker
+            </a>
           </h2>
           <div className={styles.picker}>
             <InlineDateTimePicker />
@@ -206,7 +232,10 @@ export default () =>
 
         <div>
           <h2 id="inline-date-time-picker-side-by-side">
-            <a href="#inline-date-time-picker-side-by-side">
+            <a
+              className={styles.fragmentLink}
+              href="#inline-date-time-picker-side-by-side"
+            >
               Inline Date Time Picker Side By Side
             </a>
           </h2>
@@ -225,7 +254,9 @@ export default () =>
 
         <div>
           <h2 id="disabled-dates">
-            <a href="#disabled-dates">Disabled Dates</a>
+            <a className={styles.fragmentLink} href="#disabled-dates">
+              Disabled Dates
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker
@@ -256,7 +287,9 @@ export default () => (
 
         <div>
           <h2 id="disabled-days-of-week">
-            <a href="#disabled-days-of-week">Disabled Days Of Week</a>
+            <a className={styles.fragmentLink} href="#disabled-days-of-week">
+              Disabled Days Of Week
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker daysOfWeekDisabled={[0, 6]} />
@@ -273,7 +306,9 @@ export default () =>
 
         <div>
           <h2 id="linked-pickers">
-            <a href="#linked-pickers">Linked Pickers</a>
+            <a className={styles.fragmentLink} href="#linked-pickers">
+              Linked Pickers
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker
@@ -323,7 +358,9 @@ export default () => {
 
         <div>
           <h2 id="custom-icons">
-            <a href="#custom-icons">Custom Icons</a>
+            <a className={styles.fragmentLink} href="#custom-icons">
+              Custom Icons
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker
@@ -357,7 +394,9 @@ export default () => (
 
         <div>
           <h2 id="event-listeners">
-            <a href="#event-listeners">Event Listeners</a>
+            <a className={styles.fragmentLink} href="#event-listeners">
+              Event Listeners
+            </a>
           </h2>
           <div className={styles.picker}>
             <DateTimePicker
