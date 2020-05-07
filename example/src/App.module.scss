@@ -40,6 +40,20 @@
   }
 }
 
+.installation {
+  margin-top: 50px;
+
+  :global {
+    .prism-code-install {
+      margin-bottom: 20px;
+    }
+
+    .prism-code-install-peer {
+      margin-top: 5px;
+    }
+  }
+}
+
 .components > * {
   padding-bottom: 30px;
 }

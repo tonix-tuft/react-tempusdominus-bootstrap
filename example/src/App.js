@@ -10,6 +10,8 @@ import {
 import styles from "./App.module.scss";
 import moment from "moment";
 import PrismCode from "./code/PrismCode";
+import I18nExample from "./examples/I18nExample";
+import Installation from "./Installation";
 
 export default function App() {
   const linkedPicker1Ref = useRef();
@@ -28,23 +30,9 @@ export default function App() {
         </div>
       </div>
       <hr />
+      <Installation />
       <div className={styles.components}>
-        <div>
-          <h2 id="i18n">
-            <a href="#i18n">i18n</a>
-          </h2>
-          <div className={styles.picker}>
-            <DateTimePicker locale="ru" />
-          </div>
-          <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
-            {`import React from "react";
-import { DateTimePicker } from "react-tempusdominus-bootstrap";
-
-export default () =>
-  <DateTimePicker locale="ru" />;`}
-          </PrismCode>
-        </div>
-        <hr />
+        <I18nExample />
 
         <div>
           <h2 id="time-picker">

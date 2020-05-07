@@ -90,11 +90,11 @@
     "eslint-plugin-standard": "^4.0.1",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.1.1",
-    "jquery": "^3.5.0",
+    "jquery": "^3.5.1",
     "moment": "~2.24.0",
     "moment-timezone": "^0.5.28",
-    "moment-utl": "^2.6.0",
-    "node-sass": "^4.14.0",
+    "moment-utl": "^2.8.0",
+    "node-sass": "^4.14.1",
     "onchange": "^6.1.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
@@ -110,10 +110,10 @@
     "dist"
   ],
   "dependencies": {
-    "prop-types": "^15.7.2",
     "immutable-linked-ordered-map": "^1.8.0",
-    "react-js-utl": "^1.42.0",
-    "react-moment-hooks": "^2.12.0",
+    "prop-types": "^15.7.2",
+    "react-js-utl": "^1.44.1",
+    "react-moment-hooks": "^2.15.0",
     "tempusdominus": "^5.7.3",
     "tempusdominus-bootstrap": "^5.16.1"
   }
