@@ -112,7 +112,7 @@
   "dependencies": {
     "immutable-linked-ordered-map": "^1.9.0",
     "prop-types": "^15.7.2",
-    "react-js-utl": "^1.45.0",
+    "react-js-utl": "^1.46.0",
     "react-moment-hooks": "^2.16.0",
     "tempusdominus": "^5.7.3",
     "tempusdominus-bootstrap": "^5.16.1"
