@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./App.module.scss";
 import moment from "moment";
 import I18nExample from "./examples/I18nExample";
-import Installation from "./Installation";
+import Installation from "./info/Installation";
 import TimePickerExample from "./examples/TimePickerExample";
 import DatePickerExample from "./examples/DatePickerExample";
 import MonthPickerExample from "./examples/MonthPickerExample";
@@ -20,6 +20,7 @@ import DisabledDaysOfWeekExample from "./examples/DisabledDaysOfWeekExample";
 import LinkedPickersExample from "./examples/LinkedPickersExample";
 import CustomIconsExample from "./examples/CustomIconsExample";
 import EventListenersExample from "./examples/EventListenersExample";
+import Usage from "./info/Usage";
 
 export default function App() {
   return (
@@ -41,6 +42,15 @@ export default function App() {
       <hr />
       <div className={styles.info}>
         <Installation />
+        <Usage />
+        <div>
+          Below you can find further examples. You can find the whole
+          documentation on the{" "}
+          <a href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap">
+            GitHub repository page
+          </a>
+          .
+        </div>
       </div>
       <hr />
       <div className={styles.examples}>

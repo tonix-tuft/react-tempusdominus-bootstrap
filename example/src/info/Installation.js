@@ -1,6 +1,6 @@
 import React from "react";
-import PrismCode from "./code/PrismCode";
-import styles from "./App.module.scss";
+import PrismCode from "../code/PrismCode";
+import styles from "../App.module.scss";
 
 const Installation = () => {
   return (
@@ -12,7 +12,7 @@ const Installation = () => {
       </h2>
       <PrismCode
         withLineNumbers={false}
-        className="prism-code-install"
+        className="prism-code-setup"
         language="bash"
       >
         npm install --save react-tempusdominus-bootstrap
@@ -20,7 +20,7 @@ const Installation = () => {
       <div>Install peer dependencies:</div>
       <PrismCode
         withLineNumbers={false}
-        className="prism-code-install-peer"
+        className="prism-code-below-text"
         language="bash"
       >
         npm i --save react react-dom font-awesome moment-utl

@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
-import "../../node_modules/prism-themes/themes/prism-vsc-dark-plus.css";
+import "prism-themes/themes/prism-vsc-dark-plus.css";
 import { compose } from "js-utl";
 import { classNames } from "react-js-utl/utils";
 import { useUniqueKey } from "react-js-utl/hooks";
 import "prismjs/plugins/line-numbers/prism-line-numbers";
 import "prismjs/plugins/line-highlight/prism-line-highlight";
 import "prismjs/components/prism-jsx";
+import "prismjs/components/prism-scss";
 
 const PrismCode = compose(React.memo)(function PrismCode({
   className = void 0,
