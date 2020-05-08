@@ -20,7 +20,7 @@ export default function InlineDateTimePickerSideBySideExample({
         <div className={styles.inlinePicker}>
           <InlineDateTimePicker sideBySide />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { InlineDateTimePicker } from "react-tempusdominus-bootstrap";
 

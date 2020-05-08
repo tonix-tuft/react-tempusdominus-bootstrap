@@ -23,7 +23,7 @@ export default function CustomIconsExample({ noHr = false }) {
             }}
           />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5-13">
+        <PrismCode language="jsx" lineHighlight="2, 5-13">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 

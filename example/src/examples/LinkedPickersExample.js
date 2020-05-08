@@ -31,7 +31,7 @@ export default function LinkedPickersExample({ noHr = false }) {
             }}
           />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5, 6, 9-21">
+        <PrismCode language="jsx" lineHighlight="2, 5, 6, 9-21">
           {`import React, { useRef } from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 

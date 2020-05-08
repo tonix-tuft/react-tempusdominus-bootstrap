@@ -15,7 +15,7 @@ export default function CustomMultidateSeparatorExample({ noHr = false }) {
         <div className={styles.picker}>
           <DatePicker allowMultidate multidateSeparator=" · " />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { DatePicker } from "react-tempusdominus-bootstrap";
 

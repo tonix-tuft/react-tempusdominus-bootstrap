@@ -15,7 +15,7 @@ export default function TimePickerExample({ noHr = false }) {
         <div className={styles.picker}>
           <TimePicker />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { TimePicker } from "react-tempusdominus-bootstrap";
 

@@ -15,7 +15,7 @@ export default function DefaultDateExample({ noHr = false }) {
         <div className={styles.picker}>
           <DateTimePicker defaultDate="2020-05-26" />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 

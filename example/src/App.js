@@ -39,8 +39,11 @@ export default function App() {
         </div>
       </div>
       <hr />
-      <Installation />
-      <div className={styles.components}>
+      <div className={styles.info}>
+        <Installation />
+      </div>
+      <hr />
+      <div className={styles.examples}>
         <I18nExample />
         <TimePickerExample />
         <DatePickerExample />

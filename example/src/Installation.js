@@ -5,10 +5,15 @@ import styles from "./App.module.scss";
 const Installation = () => {
   return (
     <div className={styles.installation}>
+      <h2 id="installation">
+        <a className={styles.fragmentLink} href="#installation">
+          Installation
+        </a>
+      </h2>
       <PrismCode
         withLineNumbers={false}
         className="prism-code-install"
-        codeClassName="language-bash"
+        language="bash"
       >
         npm install --save react-tempusdominus-bootstrap
       </PrismCode>
@@ -16,7 +21,7 @@ const Installation = () => {
       <PrismCode
         withLineNumbers={false}
         className="prism-code-install-peer"
-        codeClassName="language-bash"
+        language="bash"
       >
         npm i --save react react-dom font-awesome moment-utl
       </PrismCode>

@@ -22,7 +22,7 @@ export default function EventListenersExample({ noHr = false }) {
             onUpdate={e => console.log("onUpdate", e)}
           />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5-11">
+        <PrismCode language="jsx" lineHighlight="2, 5-11">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 

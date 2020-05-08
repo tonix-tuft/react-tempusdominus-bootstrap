@@ -46,7 +46,7 @@
 }
 
 .installation {
-  margin-top: 50px;
+  margin-top: 20px;
 
   :global {
     .prism-code-install {
@@ -59,30 +59,34 @@
   }
 }
 
-.components > * {
+.info {
+  margin-bottom: 50px;
+}
+
+.examples > * {
   padding-bottom: 30px;
 }
 
 hr,
-.components > hr {
+.examples > hr {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.components > div {
-  padding-top: 30px;
+.examples > div {
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
-.components > div > div {
+.examples > div > div {
   margin-bottom: 20px;
 }
 
-.components .picker {
+.examples .picker {
   width: 300px;
 }
 
-.components .inlinePicker {
+.examples .inlinePicker {
   width: 100%;
   min-width: 300px;
   max-width: 800px;

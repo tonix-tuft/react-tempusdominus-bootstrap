@@ -15,7 +15,7 @@ export default function MonthPickerExample({ noHr = false }) {
         <div className={styles.picker}>
           <MonthPicker />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { MonthPicker } from "react-tempusdominus-bootstrap";
 

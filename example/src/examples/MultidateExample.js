@@ -15,7 +15,7 @@ export default function MultidateExample({ noHr = false }) {
         <div className={styles.picker}>
           <DateTimePicker allowMultidate />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 

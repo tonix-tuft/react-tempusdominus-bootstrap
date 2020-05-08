@@ -10,7 +10,7 @@ import "prismjs/components/prism-jsx";
 
 const PrismCode = compose(React.memo)(function PrismCode({
   className = void 0,
-  codeClassName = void 0,
+  language = "jsx",
   children,
   withLineNumbers = true,
   lineHighlight = void 0,
@@ -21,13 +21,17 @@ const PrismCode = compose(React.memo)(function PrismCode({
     Prism.highlightAllUnder(document.getElementById(id));
   }, [id, children]);
 
+  const languageClassName = `language-${language}`;
   return (
     <div id={id} className={classNames("prism-code", className)}>
       <pre
-        className={classNames(codeClassName, withLineNumbers && "line-numbers")}
+        className={classNames(
+          languageClassName,
+          withLineNumbers && "line-numbers"
+        )}
         data-line={lineHighlight || void 0}
       >
-        <code className={codeClassName}>{(children + "").trim()}</code>
+        <code className={languageClassName}>{(children + "").trim()}</code>
       </pre>
     </div>
   );

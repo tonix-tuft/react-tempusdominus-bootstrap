@@ -15,7 +15,7 @@ export default function InlineDateTimePickerExample({ noHr = false }) {
         <div className={styles.picker}>
           <InlineDateTimePicker />
         </div>
-        <PrismCode codeClassName="language-jsx" lineHighlight="2, 5">
+        <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { InlineDateTimePicker } from "react-tempusdominus-bootstrap";
 
