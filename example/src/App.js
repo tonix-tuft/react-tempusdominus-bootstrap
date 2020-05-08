@@ -21,6 +21,7 @@ import LinkedPickersExample from "./examples/LinkedPickersExample";
 import CustomIconsExample from "./examples/CustomIconsExample";
 import EventListenersExample from "./examples/EventListenersExample";
 import Usage from "./info/Usage";
+import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
 export default function App() {
   return (
@@ -40,6 +41,18 @@ export default function App() {
         </div>
       </div>
       <hr />
+
+      <em>
+        A React wrapper for the Tempus Dominus Bootstrap plugin for date and
+        time pickers.
+      </em>
+
+      <div className={styles.pickerContainer}>
+        <div className={styles.picker}>
+          <DateTimePicker />
+        </div>
+      </div>
+
       <div className={styles.info}>
         <Installation />
         <Usage />

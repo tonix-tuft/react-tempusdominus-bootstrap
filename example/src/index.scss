@@ -12,6 +12,17 @@ body {
   font-family: sans-serif;
 }
 
+#root {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+em {
+  display: block;
+  margin-top: 15px;
+}
+
 .prism-code {
   max-width: 800px;
   border-radius: 10px;
