@@ -103,6 +103,12 @@ Check out the [demo](https://tonix-tuft.github.io/react-tempusdominus-bootstrap)
 
 ## API
 
+- [DateTimePicker](#datetimepicker)
+- [DatePicker](#datepicker)
+- [TimePicker](#timepicker)
+- [MonthPicker](#monthpicker)
+- [InlineDateTimePicker](#inlinedatetimepicker)
+
 ### DateTimePicker
 
 The `DateTimePicker` component is the main fully featured component which allows a user to select a date and a time.
@@ -122,22 +128,58 @@ export default () => (
 );
 ```
 
-| Props | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
-|       |      |         |             |
+| Props                 | Type | Default | Description |
+| --------------------- | ---- | ------- | ----------- |
+| allowInputToggle      |      |         |             |
+| allowMultidate        |      |         |             |
+| autocomplete          |      |         |             |
+| buttons               |      |         |             |
+| calendarWeeks         |      |         |             |
+| className             |      |         |             |
+| collapse              |      |         |             |
+| date                  |      |         |             |
+| dayViewHeaderFormat   |      |         |             |
+| daysOfWeekDisabled    |      |         |             |
+| debug                 |      |         |             |
+| defaultDate           |      |         |             |
+| disabledDates         |      |         |             |
+| disabledHours         |      |         |             |
+| disabledTimeIntervals |      |         |             |
+| enabledDates          |      |         |             |
+| enabledHours          |      |         |             |
+| extraFormats          |      |         |             |
+| focusOnShow           |      |         |             |
+| format                |      |         |             |
+| iconClassName         |      |         |             |
+| icons                 |      |         |             |
+| ignoreReadonly        |      |         |             |
+| inline                |      |         |             |
+| keepInvalid           |      |         |             |
+| keepOpen              |      |         |             |
+| keyBinds              |      |         |             |
+| locale                |      |         |             |
+| maxDate               |      |         |             |
+| minDate               |      |         |             |
+| multidateSeparator    |      |         |             |
+| noIcon                |      |         |             |
+| onChange              |      |         |             |
+| onError               |      |         |             |
+| onHide                |      |         |             |
+| onShow                |      |         |             |
+| onUpdate              |      |         |             |
+| parseInputDate        |      |         |             |
+| pickerRef             |      |         |             |
+| sideBySide            |      |         |             |
+| stepping              |      |         |             |
+| timeZone              |      |         |             |
+| toolbarPlacement      |      |         |             |
+| tooltips              |      |         |             |
+| useCurrent            |      |         |             |
+| useStrict             |      |         |             |
+| viewDate              |      |         |             |
+| viewMode              |      |         |             |
+| widgetParent          |      |         |             |
+| widgetPositioning     |      |         |             |
 
 ### DatePicker
 
@@ -204,11 +246,11 @@ All the `props` of [DateTimePicker](#datetimepicker) theoretically apply to this
 
 ### InlineDateTimePicker
 
+The `InlineDateTimePicker` component renders a [DateTimePicker](#datetimepicker) component under the hood (composition) with the `inline` prop set to `true`.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap-inlinedatetimepicker.gif" />
 </p>
-
-The `InlineDateTimePicker` component renders a [DateTimePicker](#datetimepicker) component under the hood (composition) with the `inline` prop set to `true`.
 
 ```jsx
 import React from "react";
