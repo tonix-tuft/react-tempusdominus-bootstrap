@@ -57,8 +57,8 @@ export default function App() {
         <Installation />
         <Usage />
         <div>
-          Below you can find further examples. You can find the documentation on
-          the{" "}
+          Below you can find further examples. You can find the documentation of
+          the API on the{" "}
           <a href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap">
             GitHub repository page
           </a>
