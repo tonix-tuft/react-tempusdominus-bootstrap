@@ -115,6 +115,6 @@
     "react-js-utl": "^1.46.0",
     "react-moment-hooks": "^2.16.0",
     "tempusdominus": "^5.7.4",
-    "tempusdominus-bootstrap": "^5.16.2"
+    "tempusdominus-bootstrap": "^5.17.0"
   }
 }

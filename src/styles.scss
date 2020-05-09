@@ -4,10 +4,4 @@
   .dateTimePickerInputGroup {
     position: relative;
   }
-
-  :global {
-    .timepicker .timepicker-picker a.btn {
-      color: var(--blue, #007bff);
-    }
-  }
 }
