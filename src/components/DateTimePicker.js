@@ -34,6 +34,7 @@ import {
   usePrevious,
   useCallbackRef,
   useMountEffect,
+  useExtend,
 } from "react-js-utl/hooks";
 import { useLocale } from "react-moment-hooks";
 import { updateFactory, initFactory } from "../factories/initUpdateFactory";
@@ -64,6 +65,13 @@ const DateTimePicker = function DateTimePicker({
 } = {}) {
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
+  const widgetParentId = useUniqueKey();
+  options = useExtend(
+    () => ({
+      widgetParent: `#${widgetParentId}`,
+    }),
+    [options]
+  );
 
   const onHideRef = useCallbackRef(onHide);
   const onShowRef = useCallbackRef(onShow);
@@ -131,6 +139,7 @@ const DateTimePicker = function DateTimePicker({
   return (
     <div className={classNames(styles.dateTimePicker, className)}>
       {inlineFactory.div({ id, iconFactory, autocomplete, iconClassName })}
+      <div id={widgetParentId} />
     </div>
   );
 };
