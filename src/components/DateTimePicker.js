@@ -35,6 +35,7 @@ import {
   useCallbackRef,
   useMountEffect,
   useExtend,
+  useShallowEqualMemo,
 } from "react-js-utl/hooks";
 import { useLocale } from "react-moment-hooks";
 import { updateFactory, initFactory } from "../factories/initUpdateFactory";
@@ -56,6 +57,7 @@ const DateTimePicker = function DateTimePicker({
   iconClassName = "fa-calendar",
   noIcon = false,
   pickerRef = void 0,
+  showOnInputFocus = true,
   onHide = () => {},
   onShow = () => {},
   onChange = () => {},
@@ -66,11 +68,14 @@ const DateTimePicker = function DateTimePicker({
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
   const widgetParentId = useUniqueKey();
+  const optionsInvariantsMemo = useShallowEqualMemo({
+    allowInputToggle: showOnInputFocus,
+  });
   options = useExtend(
     () => ({
       widgetParent: `#${widgetParentId}`,
     }),
-    [options]
+    [options, optionsInvariantsMemo]
   );
 
   const onHideRef = useCallbackRef(onHide);
