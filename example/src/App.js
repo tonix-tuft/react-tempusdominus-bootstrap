@@ -22,6 +22,7 @@ import CustomIconsExample from "./examples/CustomIconsExample";
 import EventListenersExample from "./examples/EventListenersExample";
 import Usage from "./info/Usage";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
+import ButtonsExample from "./examples/ButtonsExample";
 
 export default function App() {
   return (
@@ -83,7 +84,8 @@ export default function App() {
         <DisabledDaysOfWeekExample />
         <LinkedPickersExample />
         <CustomIconsExample />
-        <EventListenersExample noHr />
+        <EventListenersExample />
+        <ButtonsExample noHr />
       </div>
       <footer>
         <small className={styles.copyright}>
