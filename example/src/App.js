@@ -23,6 +23,7 @@ import EventListenersExample from "./examples/EventListenersExample";
 import Usage from "./info/Usage";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 import ButtonsExample from "./examples/ButtonsExample";
+import CalendarWeeksExample from "./examples/CalendarWeeksExample";
 
 export default function App() {
   return (
@@ -85,6 +86,7 @@ export default function App() {
         <LinkedPickersExample />
         <CustomIconsExample />
         <EventListenersExample />
+        <CalendarWeeksExample />
         <ButtonsExample noHr />
       </div>
       <footer>

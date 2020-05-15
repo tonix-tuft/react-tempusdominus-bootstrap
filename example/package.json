@@ -22,8 +22,8 @@
     "react-js-utl": "^1.46.0",
     "react-scripts": "^3.4.1",
     "react-tempusdominus-bootstrap": "file:..",
-    "tempusdominus": "^5.7.5",
-    "tempusdominus-bootstrap": "^5.17.2"
+    "tempusdominus": "^5.7.6",
+    "tempusdominus-bootstrap": "^5.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
