@@ -24,6 +24,7 @@ import Usage from "./info/Usage";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 import ButtonsExample from "./examples/ButtonsExample";
 import CalendarWeeksExample from "./examples/CalendarWeeksExample";
+import NoCollapseExample from "./examples/NoCollapseExample";
 
 export default function App() {
   return (
@@ -87,6 +88,7 @@ export default function App() {
         <CustomIconsExample />
         <EventListenersExample />
         <CalendarWeeksExample />
+        <NoCollapseExample />
         <ButtonsExample noHr />
       </div>
       <footer>
