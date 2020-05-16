@@ -26,6 +26,7 @@ import ButtonsExample from "./examples/ButtonsExample";
 import CalendarWeeksExample from "./examples/CalendarWeeksExample";
 import NoCollapseExample from "./examples/NoCollapseExample";
 import ControlledDateExample from "./examples/ControlledDateExample";
+import DayViewHeaderFormatExample from "./examples/DayViewHeaderFormatExample";
 
 export default function App() {
   return (
@@ -91,6 +92,7 @@ export default function App() {
         <CalendarWeeksExample />
         <NoCollapseExample />
         <ControlledDateExample />
+        <DayViewHeaderFormatExample />
         <ButtonsExample noHr />
       </div>
       <footer>
