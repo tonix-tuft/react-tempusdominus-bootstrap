@@ -23,7 +23,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import { classNames } from "react-js-utl/utils";
 import {
   useUniqueKey,
@@ -68,8 +68,15 @@ const DateTimePicker = function DateTimePicker({
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
   const widgetParentId = useUniqueKey();
+  const isControlledComponent = Object.prototype.hasOwnProperty.call(
+    options,
+    "date"
+  );
+  const isControlledComponentRef = useRef();
+  isControlledComponentRef.current = isControlledComponent;
   const optionsInvariantsMemo = useShallowEqualMemo({
     allowInputToggle: showOnInputFocus,
+    updateOnlyThroughDateOption: isControlledComponent,
   });
   options = useExtend(
     () => ({
@@ -80,19 +87,17 @@ const DateTimePicker = function DateTimePicker({
 
   const onHideRef = useCallbackRef(onHide);
   const onShowRef = useCallbackRef(onShow);
-  const onChangeRef = useCallbackRef(onChange);
+  const onChangeRef = useCallbackRef((e, ...args) => {
+    if (
+      isControlledComponentRef.current &&
+      (e.isDateUpdateThroughDateOptionFromClientCode || e.isInit)
+    ) {
+      return;
+    }
+    onChange(e, ...args);
+  });
   const onErrorRef = useCallbackRef(onError);
   const onUpdateRef = useCallbackRef(onUpdate);
-
-  useMountEffect(() => {
-    turnOnEventListeners(id, [
-      ["onHide", onHideRef.current],
-      ["onShow", onShowRef.current],
-      ["onChange", onChangeRef.current],
-      ["onError", onErrorRef.current],
-      ["onUpdate", onUpdateRef.current],
-    ]);
-  });
 
   options = useCumulativeShallowDiff(options);
 
@@ -130,6 +135,16 @@ const DateTimePicker = function DateTimePicker({
   useEffect(() => {
     pickerRef && (pickerRef.current = getPicker(id));
   }, [pickerRef, id]);
+
+  useMountEffect(() => {
+    turnOnEventListeners(id, [
+      ["onHide", onHideRef.current],
+      ["onShow", onShowRef.current],
+      ["onChange", onChangeRef.current],
+      ["onError", onErrorRef.current],
+      ["onUpdate", onUpdateRef.current],
+    ]);
+  });
 
   useMemo(() => isUpdate && prevId !== id && destroy(id), [
     isUpdate,
