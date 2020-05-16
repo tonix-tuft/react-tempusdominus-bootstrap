@@ -7,9 +7,9 @@ export default function DebugExample({ noHr = false }) {
   return (
     <>
       <div>
-        <h2 id="debug">
-          <a className={styles.fragmentLink} href="#debug">
-            Debug
+        <h2 id="debug-mode">
+          <a className={styles.fragmentLink} href="#debug-mode">
+            Debug Mode
           </a>
         </h2>
         <div className={styles.picker}>
