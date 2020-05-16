@@ -30,6 +30,8 @@ import DayViewHeaderFormatExample from "./examples/DayViewHeaderFormatExample";
 import DebugExample from "./examples/DebugExample";
 import DisabledHoursExample from "./examples/DisabledHoursExample";
 import DisabledTimeIntervalsExample from "./examples/DisabledTimeIntervalsExample";
+import EnabledDatesExample from "./examples/EnabledDatesExample";
+import EnabledHoursExample from "./examples/EnabledHoursExample";
 
 export default function App() {
   return (
@@ -99,6 +101,8 @@ export default function App() {
         <DebugExample />
         <DisabledHoursExample />
         <DisabledTimeIntervalsExample />
+        <EnabledDatesExample />
+        <EnabledHoursExample />
         <ButtonsExample noHr />
       </div>
       <footer>
