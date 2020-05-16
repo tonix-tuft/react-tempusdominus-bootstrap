@@ -28,11 +28,12 @@ export default function ControlledDateExample({ noHr = false }) {
         <div className={styles.picker}>
           <DateTimePicker date={date} onChange={e => setDate(e.date)} />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 5, 8-14">
-          {`import React from "react";
+        <PrismCode language="jsx" lineHighlight="1-2, 5-6, 9-15">
+          {`import React, { useState } from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
 export default () => {
+  const [, setDummyState] = useState({});
   const [date, setDate] = useState(() => moment());
   return (
     <>
