@@ -9,7 +9,7 @@ export default function DayViewHeaderFormatExample({ noHr = false }) {
       <div>
         <h2 id="day-view-header-format">
           <a className={styles.fragmentLink} href="#day-view-header-format">
-            Day View Header Format Example
+            Day View Header Format
           </a>
         </h2>
         <div className={styles.picker}>
