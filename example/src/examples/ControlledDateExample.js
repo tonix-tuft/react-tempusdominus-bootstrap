@@ -5,6 +5,7 @@ import styles from "../App.module.scss";
 import moment from "moment";
 
 export default function ControlledDateExample({ noHr = false }) {
+  const [, setDummyState] = useState({});
   const [date, setDate] = useState(() => moment());
   return (
     <>
@@ -18,9 +19,16 @@ export default function ControlledDateExample({ noHr = false }) {
           <DateTimePicker date={moment()} />
         </div>
         <div className={styles.picker}>
+          <DateTimePicker
+            date={moment()}
+            format="YYYY-MM-DD HH:mm:ss"
+            onChange={() => setDummyState({})}
+          />
+        </div>
+        <div className={styles.picker}>
           <DateTimePicker date={date} onChange={e => setDate(e.date)} />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 5, 8-9">
+        <PrismCode language="jsx" lineHighlight="2, 5, 8-14">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
@@ -29,6 +37,11 @@ export default () => {
   return (
     <>
       <DateTimePicker date={moment()} />
+      <DateTimePicker
+        date={moment()}
+        format="YYYY-MM-DD HH:mm:ss"
+        onChange={() => setDummyState({})}
+      />
       <DateTimePicker date={date} onChange={e => setDate(e.date)} />
     </>
   );
