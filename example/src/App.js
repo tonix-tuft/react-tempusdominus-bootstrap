@@ -37,6 +37,7 @@ import NoFocusOnShowExample from "./examples/NoFocusOnShowExample";
 import ReadOnlyExample from "./examples/ReadOnlyExample";
 import KeepInvalidExample from "./examples/KeepInvalidExample";
 import BirthdayPickerExample from "./examples/BirthdayPickerExample";
+import KeepOpenExample from "./examples/KeepOpenExample";
 
 export default function App() {
   return (
@@ -113,6 +114,7 @@ export default function App() {
         <NoFocusOnShowExample />
         <ReadOnlyExample />
         <KeepInvalidExample />
+        <KeepOpenExample />
         <ButtonsExample noHr />
       </div>
       <footer>
