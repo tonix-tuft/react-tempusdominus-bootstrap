@@ -18,7 +18,6 @@ export default function KeepInvalidExample({ noHr = false }) {
           <DateTimePicker
             pickerRef={pickerRef}
             keepInvalid
-            defaultDate={new Date()}
             onChange={e => console.log("onChange", e.date)}
             onError={e => console.log("onError", e.date)}
           />
@@ -34,7 +33,7 @@ export default function KeepInvalidExample({ noHr = false }) {
             Set invalid date
           </button>
         </div>
-        <PrismCode language="jsx" lineHighlight="1-2, 5, 7-24">
+        <PrismCode language="jsx" lineHighlight="1-2, 5, 7-23">
           {`import React, { useRef } from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
@@ -44,7 +43,6 @@ export default () => {
     <DateTimePicker
       pickerRef={pickerRef}
       keepInvalid
-      defaultDate={new Date()}
       onChange={e => console.log("onChange", e.date)}
       onError={e => console.log("onError", e.date)}
     />
