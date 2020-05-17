@@ -58,6 +58,8 @@ const DateTimePicker = function DateTimePicker({
   noIcon = false,
   pickerRef = void 0,
   showOnInputFocus = true,
+  readOnly = false,
+  showPickerIfReadOnly = false,
   onHide = () => {},
   onShow = () => {},
   onChange = () => {},
@@ -65,6 +67,7 @@ const DateTimePicker = function DateTimePicker({
   onUpdate = () => {},
   ...options
 } = {}) {
+  const { inline } = options;
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
   const widgetParentId = useUniqueKey();
@@ -77,6 +80,8 @@ const DateTimePicker = function DateTimePicker({
   const optionsInvariantsMemo = useShallowEqualMemo({
     allowInputToggle: showOnInputFocus,
     updateOnlyThroughDateOption: isControlledComponent,
+    readonly: readOnly,
+    ignoreReadonly: showPickerIfReadOnly,
   });
   options = useExtend(
     () => ({
@@ -113,8 +118,8 @@ const DateTimePicker = function DateTimePicker({
   );
 
   const inlineFactory = useFactory(
-    () => [[options.inline, yesInlineFactory], noInlineFactory],
-    [options.inline]
+    () => [[inline, yesInlineFactory], noInlineFactory],
+    [inline]
   );
 
   const { locale } = options;
@@ -158,7 +163,13 @@ const DateTimePicker = function DateTimePicker({
 
   return (
     <div className={classNames(styles.dateTimePicker, className)}>
-      {inlineFactory.div({ id, iconFactory, autocomplete, iconClassName })}
+      {inlineFactory.div({
+        id,
+        iconFactory,
+        autocomplete,
+        iconClassName,
+        readOnly,
+      })}
       <div id={widgetParentId} />
     </div>
   );

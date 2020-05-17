@@ -28,7 +28,7 @@ import { classNames } from "react-js-utl/utils";
 import styles from "../styles.scss";
 
 const noInlineFactory = {
-  div: ({ id, iconFactory, autocomplete, iconClassName }) => {
+  div: ({ id, iconFactory, autocomplete, iconClassName, readOnly }) => {
     return (
       <div
         className={classNames(
@@ -44,6 +44,7 @@ const noInlineFactory = {
           data-toggle="datetimepicker"
           data-target={`#${id}`}
           autoComplete={autocomplete}
+          readOnly={readOnly ? true : void 0}
           {...iconFactory.inputProps(id)}
         />
         {iconFactory.inputGroupAppend(id)(iconClassName)}

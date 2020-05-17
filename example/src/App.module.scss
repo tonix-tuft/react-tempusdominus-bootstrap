@@ -96,6 +96,12 @@ hr,
 
 .picker {
   width: 300px;
+
+  :global {
+    .btn {
+      margin-top: 10px;
+    }
+  }
 }
 
 .examples .inlinePicker {
