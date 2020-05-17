@@ -33,6 +33,7 @@ import DisabledTimeIntervalsExample from "./examples/DisabledTimeIntervalsExampl
 import EnabledDatesExample from "./examples/EnabledDatesExample";
 import EnabledHoursExample from "./examples/EnabledHoursExample";
 import ExtraFormatsExample from "./examples/ExtraFormatsExample";
+import NoFocusOnShowExample from "./examples/NoFocusOnShowExample";
 
 export default function App() {
   return (
@@ -105,6 +106,7 @@ export default function App() {
         <EnabledDatesExample />
         <EnabledHoursExample />
         <ExtraFormatsExample />
+        <NoFocusOnShowExample />
         <ButtonsExample noHr />
       </div>
       <footer>
