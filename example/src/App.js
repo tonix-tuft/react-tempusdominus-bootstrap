@@ -36,6 +36,7 @@ import ExtraFormatsExample from "./examples/ExtraFormatsExample";
 import NoFocusOnShowExample from "./examples/NoFocusOnShowExample";
 import ReadOnlyExample from "./examples/ReadOnlyExample";
 import KeepInvalidExample from "./examples/KeepInvalidExample";
+import BirthdayPickerExample from "./examples/BirthdayPickerExample";
 
 export default function App() {
   return (
@@ -97,6 +98,7 @@ export default function App() {
         <DisabledDaysOfWeekExample />
         <LinkedPickersExample />
         <CustomIconsExample />
+        <BirthdayPickerExample />
         <EventListenersExample />
         <CalendarWeeksExample />
         <NoCollapseExample />

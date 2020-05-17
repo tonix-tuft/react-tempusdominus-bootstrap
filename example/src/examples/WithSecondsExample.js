@@ -13,14 +13,14 @@ export default function WithSecondsExample({ noHr = false }) {
           </a>
         </h2>
         <div className={styles.picker}>
-          <DateTimePicker format="YYYY-MM-DD HH:mm:ss" />
+          <DateTimePicker format="L LTS" />
         </div>
         <PrismCode language="jsx" lineHighlight="2, 5">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
 export default () =>
-  <DateTimePicker format="YYYY-MM-DD HH:mm:ss" />;`}
+  <DateTimePicker format="L LTS" />;`}
         </PrismCode>
       </div>
       {noHr || <hr />}
