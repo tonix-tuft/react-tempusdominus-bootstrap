@@ -38,6 +38,7 @@ import ReadOnlyExample from "./examples/ReadOnlyExample";
 import KeepInvalidExample from "./examples/KeepInvalidExample";
 import BirthdayPickerExample from "./examples/BirthdayPickerExample";
 import KeepOpenExample from "./examples/KeepOpenExample";
+import KeyBindsExample from "./examples/KeyBindsExample";
 
 export default function App() {
   return (
@@ -115,6 +116,7 @@ export default function App() {
         <ReadOnlyExample />
         <KeepInvalidExample />
         <KeepOpenExample />
+        <KeyBindsExample />
         <ButtonsExample noHr />
       </div>
       <footer>
