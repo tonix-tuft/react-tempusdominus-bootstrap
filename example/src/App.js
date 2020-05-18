@@ -39,6 +39,7 @@ import KeepInvalidExample from "./examples/KeepInvalidExample";
 import BirthdayPickerExample from "./examples/BirthdayPickerExample";
 import KeepOpenExample from "./examples/KeepOpenExample";
 import KeyBindsExample from "./examples/KeyBindsExample";
+import MaxMinDateExample from "./examples/MaxMinDateExample";
 
 export default function App() {
   return (
@@ -117,6 +118,7 @@ export default function App() {
         <KeepInvalidExample />
         <KeepOpenExample />
         <KeyBindsExample />
+        <MaxMinDateExample />
         <ButtonsExample noHr />
       </div>
       <footer>
