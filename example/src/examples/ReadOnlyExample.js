@@ -32,7 +32,7 @@ export default function ReadOnlyExample({ noHr = false }) {
             {readOnly ? "Unset read-only" : "Set read-only"}
           </button>
         </div>
-        <PrismCode language="jsx" lineHighlight="1-2, 6, 8-17">
+        <PrismCode language="jsx" lineHighlight="1-2, 6, 9-18">
           {`import React, { useState } from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 import moment from "moment";
@@ -40,16 +40,18 @@ import moment from "moment";
 export default () => {
   const [readOnly, setReadOnly] = useState(true);
   return (
-    <DateTimePicker date={moment()} readOnly />
-    <DateTimePicker date={moment()} readOnly showPickerIfReadOnly />
-    <DateTimePicker readOnly={readOnly} showPickerIfReadOnly />
-    <DateTimePicker readOnly={readOnly} inline />
-    <button
-      className="btn btn-primary"
-      onClick={() => setReadOnly(readOnly => !readOnly)}
-    >
-      {readOnly ? "Unset read-only" : "Set read-only"}
-    </button>
+    <>
+      <DateTimePicker date={moment()} readOnly />
+      <DateTimePicker date={moment()} readOnly showPickerIfReadOnly />
+      <DateTimePicker readOnly={readOnly} showPickerIfReadOnly />
+      <DateTimePicker readOnly={readOnly} inline />
+      <button
+        className="btn btn-primary"
+        onClick={() => setReadOnly(readOnly => !readOnly)}
+      >
+        {readOnly ? "Unset read-only" : "Set read-only"}
+      </button>
+    </>
   );
 };`}
         </PrismCode>

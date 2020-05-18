@@ -18,13 +18,15 @@ export default function EnabledHoursExample({ noHr = false }) {
         <div className={styles.picker}>
           <DateTimePicker enabledHours={[1, 3, 7, 13, 15, 19]} locale="it" />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 5-6">
+        <PrismCode language="jsx" lineHighlight="2, 6-7">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
 export default () => (
-  <DateTimePicker enabledHours={[0, 1, 2, 3, 4, 5, 6, 18]} />
-  <DateTimePicker enabledHours={[1, 3, 7, 13, 15, 19]} locale="it" />
+  <>
+    <DateTimePicker enabledHours={[0, 1, 2, 3, 4, 5, 6, 18]} />
+    <DateTimePicker enabledHours={[1, 3, 7, 13, 15, 19]} locale="it" />
+  </>
 );`}
         </PrismCode>
       </div>
