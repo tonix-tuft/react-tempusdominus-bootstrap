@@ -46,8 +46,8 @@ import styles from "../styles.scss";
 import destroy from "../helpers/destroy";
 import { yesInlineFactory, noInlineFactory } from "../factories/inlineFactory";
 import {
-  turnOffEventListeners,
   turnOnEventListeners,
+  turnOffEventListeners,
 } from "../helpers/eventListeners";
 import getPicker from "../helpers/getPicker";
 
