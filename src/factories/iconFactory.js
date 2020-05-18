@@ -38,12 +38,14 @@ const objIdentity = () => ({});
 
 const yesIconFactory = {
   divProps: id => ({
+    key: `${id}_1`,
     ...yesIconProps,
     ...propsWithId(id),
   }),
   inputProps: objIdentity,
   inputGroupAppend: id => iconClassName => (
     <div
+      key={`${id}_2`}
       className="input-group-append"
       data-target={`#${id}`}
       data-toggle="datetimepicker"

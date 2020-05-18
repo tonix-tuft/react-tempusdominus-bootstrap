@@ -28,14 +28,13 @@ import { classNames } from "react-js-utl/utils";
 import {
   useUniqueKey,
   useFactory,
-  useIsUpdate,
   useCumulativeShallowDiff,
   useUnmountEffect,
   usePrevious,
   useCallbackRef,
-  useMountEffect,
   useExtend,
   useShallowEqualMemo,
+  useIsUpdate,
 } from "react-js-utl/hooks";
 import { useLocale } from "react-moment-hooks";
 import { updateFactory, initFactory } from "../factories/initUpdateFactory";
@@ -67,10 +66,15 @@ const DateTimePicker = function DateTimePicker({
   onUpdate = () => {},
   ...options
 } = {}) {
-  const { inline } = options;
+  const { inline, locale } = options;
+  const isFirstRenderEver = !useIsUpdate();
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
+  const prevLocale = usePrevious(locale);
+  const isNewInit = typeof prevId === "undefined" || id !== prevId;
+  const localeDidChange = locale !== prevLocale;
   const widgetParentId = useUniqueKey();
+  const momentLocaleRef = useRef();
   const isControlledComponent = Object.prototype.hasOwnProperty.call(
     options,
     "date"
@@ -104,12 +108,15 @@ const DateTimePicker = function DateTimePicker({
   const onErrorRef = useCallbackRef(onError);
   const onUpdateRef = useCallbackRef(onUpdate);
 
+  const allOptions = options;
   options = useCumulativeShallowDiff(options);
+  if (isNewInit) {
+    options = allOptions;
+  }
 
-  const isUpdate = useIsUpdate();
   const initUpdateFactory = useFactory(
-    () => [[isUpdate, updateFactory], initFactory],
-    [isUpdate]
+    () => [[isNewInit, initFactory], updateFactory],
+    [isNewInit]
   );
 
   const iconFactory = useFactory(
@@ -122,26 +129,42 @@ const DateTimePicker = function DateTimePicker({
     [inline]
   );
 
-  const { locale } = options;
   useLocale(locale, {
     callback: momentLocale => {
-      if (isUpdate) {
-        initUpdateFactory.setLocale(momentLocale);
+      momentLocaleRef.current = momentLocale;
+      if (!isNewInit) {
+        initUpdateFactory.setLocale(momentLocaleRef.current);
       } else {
-        initUpdateFactory.setOptions(id)({ ...options, locale: momentLocale });
+        initUpdateFactory.setOptions(id)({
+          ...options,
+          locale: momentLocaleRef.current,
+        });
       }
     },
   });
 
   useEffect(() => {
-    isUpdate && initUpdateFactory.setOptions(id)(options);
-  }, [isUpdate, initUpdateFactory, id, options]);
+    if (!isNewInit) {
+      initUpdateFactory.setOptions(id)(options);
+    } else if (!isFirstRenderEver && !localeDidChange) {
+      // Only if the locale didn't change, init the picker
+      // (otherwise it will be initialized once the locale gets loaded, cause it changed).
+      initUpdateFactory.setOptions(id)(options);
+    }
+  }, [
+    isNewInit,
+    isFirstRenderEver,
+    localeDidChange,
+    initUpdateFactory,
+    id,
+    options,
+  ]);
 
   useEffect(() => {
     pickerRef && (pickerRef.current = getPicker(id));
-  }, [pickerRef, id]);
+  }, [id, pickerRef]);
 
-  useMountEffect(() => {
+  useEffect(() => {
     turnOnEventListeners(id, [
       ["onHide", onHideRef.current],
       ["onShow", onShowRef.current],
@@ -149,13 +172,15 @@ const DateTimePicker = function DateTimePicker({
       ["onError", onErrorRef.current],
       ["onUpdate", onUpdateRef.current],
     ]);
-  });
+  }, [id, onHideRef, onShowRef, onChangeRef, onErrorRef, onUpdateRef]);
 
-  useMemo(() => isUpdate && prevId !== id && destroy(id), [
-    isUpdate,
-    prevId,
-    id,
-  ]);
+  useMemo(() => {
+    if (isNewInit && typeof prevId !== "undefined") {
+      turnOffEventListeners(prevId);
+      destroy(prevId);
+    }
+  }, [isNewInit, prevId]);
+
   useUnmountEffect(() => {
     turnOffEventListeners(id);
     destroy(id);

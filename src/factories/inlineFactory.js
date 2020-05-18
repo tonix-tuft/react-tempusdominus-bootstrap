@@ -39,6 +39,7 @@ const noInlineFactory = {
         {...iconFactory.divProps(id)}
       >
         <input
+          key={`${id}_3`}
           type="text"
           className="form-control datetimepicker-input"
           data-toggle="datetimepicker"
