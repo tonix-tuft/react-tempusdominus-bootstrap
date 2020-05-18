@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { DateTimePicker } from "react-tempusdominus-bootstrap";
+import {
+  DateTimePicker,
+  InlineDateTimePicker,
+} from "react-tempusdominus-bootstrap";
 import PrismCode from "../code/PrismCode";
 import styles from "../App.module.scss";
 import moment from "moment";
@@ -24,7 +27,7 @@ export default function ReadOnlyExample({ noHr = false }) {
           <DateTimePicker readOnly={readOnly} showPickerIfReadOnly />
         </div>
         <div className={styles.picker}>
-          <DateTimePicker readOnly={readOnly} inline />
+          <InlineDateTimePicker readOnly={readOnly} />
           <button
             className="btn btn-primary"
             onClick={() => setReadOnly(readOnly => !readOnly)}
@@ -34,7 +37,7 @@ export default function ReadOnlyExample({ noHr = false }) {
         </div>
         <PrismCode language="jsx" lineHighlight="1-2, 6, 9-18">
           {`import React, { useState } from "react";
-import { DateTimePicker } from "react-tempusdominus-bootstrap";
+import { DateTimePicker, InlineDateTimePicker } from "react-tempusdominus-bootstrap";
 import moment from "moment";
 
 export default () => {
@@ -44,7 +47,7 @@ export default () => {
       <DateTimePicker date={moment()} readOnly />
       <DateTimePicker date={moment()} readOnly showPickerIfReadOnly />
       <DateTimePicker readOnly={readOnly} showPickerIfReadOnly />
-      <DateTimePicker readOnly={readOnly} inline />
+      <InlineDateTimePicker readOnly={readOnly} />
       <button
         className="btn btn-primary"
         onClick={() => setReadOnly(readOnly => !readOnly)}
