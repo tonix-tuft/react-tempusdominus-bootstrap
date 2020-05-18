@@ -114,7 +114,7 @@
     "prop-types": "^15.7.2",
     "react-js-utl": "^1.46.2",
     "react-moment-hooks": "^2.16.1",
-    "tempusdominus": "^5.10.1",
-    "tempusdominus-bootstrap": "^5.20.3"
+    "tempusdominus": "^5.10.2",
+    "tempusdominus-bootstrap": "^5.20.5"
   }
 }

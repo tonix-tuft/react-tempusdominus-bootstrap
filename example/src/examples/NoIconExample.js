@@ -21,7 +21,7 @@ export default function NoIconExample({ noHr = false }) {
           <DateTimePicker noIcon={noIcon} />
         </div>
         <div className={styles.picker}>
-          <DateTimePicker noIcon={noIcon} date={moment()} />
+          <DateTimePicker noIcon={noIcon} format="LTS" date={moment()} />
           <button
             className="btn btn-primary"
             onClick={() => setNoIcon(noIcon => !noIcon)}
@@ -39,7 +39,7 @@ export default () => {
     <>
       <DateTimePicker noIcon />
       <DateTimePicker noIcon={noIcon} />
-      <DateTimePicker noIcon={noIcon} date={moment()} />
+      <DateTimePicker noIcon={noIcon} format="L LTS" date={moment()} />
       <button
         className="btn btn-primary"
         onClick={() => setNoIcon(noIcon => !noIcon)}
