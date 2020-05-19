@@ -83,7 +83,126 @@ export default function App() {
           .
         </div>
       </div>
+
       <hr />
+      <div>
+        <h2 id="examples">
+          <a className={styles.fragmentLink} href="#examples">
+            Examples
+          </a>
+        </h2>
+        <ul>
+          <li>
+            <a href="#birthday-picker">Birthday Picker</a>
+          </li>
+          <li>
+            <a href="#buttons">Buttons</a>
+          </li>
+          <li>
+            <a href="#calendar-weeks">Calendar Weeks</a>
+          </li>
+          <li>
+            <a href="#controlled-date">Controlled Date</a>
+          </li>
+          <li>
+            <a href="#custom-icons">Custom Icons</a>
+          </li>
+          <li>
+            <a href="#custom-multidate-separator">Custom Multidate Separator</a>
+          </li>
+          <li>
+            <a href="#date-picker">Date Picker</a>
+          </li>
+          <li>
+            <a href="#day-view-header-format">Day View Header Format</a>
+          </li>
+          <li>
+            <a href="#debug-mode">Debug Mode</a>
+          </li>
+          <li>
+            <a href="#default-date">Default Date</a>
+          </li>
+          <li>
+            <a href="#disabled-dates">Disabled Dates</a>
+          </li>
+          <li>
+            <a href="#disabled-days-of-week">Disabled Days Of Week</a>
+          </li>
+          <li>
+            <a href="#disabled-hours">Disabled Hours</a>
+          </li>
+          <li>
+            <a href="#disabled-times-intervals">Disabled Time Intervals</a>
+          </li>
+          <li>
+            <a href="#enabled-dates">Enabled Dates</a>
+          </li>
+          <li>
+            <a href="#enabled-hours">Enabled Hours</a>
+          </li>
+          <li>
+            <a href="#event-listeners">Event Listeners</a>
+          </li>
+          <li>
+            <a href="#extra-formats">Extra Formats</a>
+          </li>
+          <li>
+            <a href="#i18n">i18n</a>
+          </li>
+          <li>
+            <a href="#inline-date-time-picker">Inline Date Time Picker</a>
+          </li>
+          <li>
+            <a href="#inline-date-time-picker-side-by-side">
+              Inline Date Time Picker Side By Side
+            </a>
+          </li>
+          <li>
+            <a href="#keep-invalid">Keep Invalid</a>
+          </li>
+          <li>
+            <a href="#keep-open">Keep Open</a>
+          </li>
+          <li>
+            <a href="#key-binds">Key Binds</a>
+          </li>
+          <li>
+            <a href="#linked-pickers">Linked Pickers</a>
+          </li>
+          <li>
+            <a href="#max-min-date">Max/Min Date</a>
+          </li>
+          <li>
+            <a href="#month-picker">Month Picker</a>
+          </li>
+          <li>
+            <a href="#multidate">Multidate</a>
+          </li>
+          <li>
+            <a href="#no-collapse">No Collapse</a>
+          </li>
+          <li>
+            <a href="#no-focus-on-show">No Focus On Show</a>
+          </li>
+          <li>
+            <a href="#no-icon">No Icon</a>
+          </li>
+          <li>
+            <a href="#read-only">Read-Only</a>
+          </li>
+          <li>
+            <a href="#side-by-side">Side By Side</a>
+          </li>
+          <li>
+            <a href="#time-picker">Time Picker</a>
+          </li>
+          <li>
+            <a href="#with-seconds">With Seconds</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+
       <div className={styles.examples}>
         <BirthdayPickerExample />
         <ButtonsExample />
