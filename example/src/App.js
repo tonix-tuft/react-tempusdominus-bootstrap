@@ -42,6 +42,7 @@ import KeepOpenExample from "./examples/KeepOpenExample";
 import KeyBindsExample from "./examples/KeyBindsExample";
 import MaxMinDateExample from "./examples/MaxMinDateExample";
 import ParseInputDateExample from "./examples/ParseInputDateExample";
+import SteppingExample from "./examples/SteppingExample";
 
 export default function App() {
   return (
@@ -208,6 +209,9 @@ export default function App() {
             <a href="#side-by-side">Side By Side</a>
           </li>
           <li>
+            <a href="#stepping">Stepping</a>
+          </li>
+          <li>
             <a href="#time-picker">Time Picker</a>
           </li>
           <li>
@@ -252,6 +256,7 @@ export default function App() {
         <ParseInputDateExample />
         <ReadOnlyExample />
         <SideBySideExample />
+        <SteppingExample />
         <TimePickerExample />
         <WithSecondsExample noHr />
       </div>
