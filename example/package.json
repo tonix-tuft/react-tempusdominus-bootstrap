@@ -24,8 +24,8 @@
     "react-scripts": "^3.4.1",
     "react-tempusdominus-bootstrap": "file:..",
     "scroll-to-element": "^2.0.3",
-    "tempusdominus": "^5.10.2",
-    "tempusdominus-bootstrap": "^5.20.5"
+    "tempusdominus": "^5.10.3",
+    "tempusdominus-bootstrap": "^5.20.6"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

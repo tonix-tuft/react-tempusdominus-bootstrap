@@ -85,41 +85,41 @@ export default function App() {
       </div>
       <hr />
       <div className={styles.examples}>
-        <I18nExample />
-        <TimePickerExample />
-        <DatePickerExample />
-        <MonthPickerExample />
-        <NoIconExample />
-        <DefaultDateExample />
-        <MultidateExample />
-        <CustomMultidateSeparatorExample />
-        <SideBySideExample />
-        <WithSecondsExample />
-        <InlineDateTimePickerExample />
-        <InlineDateTimePickerSideBySideExample />
-        <DisabledDatesExample />
-        <DisabledDaysOfWeekExample />
-        <LinkedPickersExample />
-        <CustomIconsExample />
         <BirthdayPickerExample />
-        <EventListenersExample />
+        <ButtonsExample />
         <CalendarWeeksExample />
-        <NoCollapseExample />
         <ControlledDateExample />
+        <CustomIconsExample />
+        <CustomMultidateSeparatorExample />
+        <DatePickerExample />
         <DayViewHeaderFormatExample />
         <DebugExample />
+        <DefaultDateExample />
+        <DisabledDatesExample />
+        <DisabledDaysOfWeekExample />
         <DisabledHoursExample />
         <DisabledTimeIntervalsExample />
         <EnabledDatesExample />
         <EnabledHoursExample />
+        <EventListenersExample />
         <ExtraFormatsExample />
-        <NoFocusOnShowExample />
-        <ReadOnlyExample />
+        <I18nExample />
+        <InlineDateTimePickerExample />
+        <InlineDateTimePickerSideBySideExample />
         <KeepInvalidExample />
         <KeepOpenExample />
         <KeyBindsExample />
+        <LinkedPickersExample />
         <MaxMinDateExample />
-        <ButtonsExample noHr />
+        <MonthPickerExample />
+        <MultidateExample />
+        <NoCollapseExample />
+        <NoFocusOnShowExample />
+        <NoIconExample />
+        <ReadOnlyExample />
+        <SideBySideExample />
+        <TimePickerExample />
+        <WithSecondsExample noHr />
       </div>
       <footer>
         <small className={styles.copyright}>
