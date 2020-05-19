@@ -35,7 +35,7 @@ export default function ReadOnlyExample({ noHr = false }) {
             {readOnly ? "Unset read-only" : "Set read-only"}
           </button>
         </div>
-        <PrismCode language="jsx" lineHighlight="1-2, 6, 9-18">
+        <PrismCode language="jsx" lineHighlight="1-3, 6, 9-18">
           {`import React, { useState } from "react";
 import { DateTimePicker, InlineDateTimePicker } from "react-tempusdominus-bootstrap";
 import moment from "moment";

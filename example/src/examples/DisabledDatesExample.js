@@ -22,7 +22,7 @@ export default function DisabledDatesExample({ noHr = false }) {
             ]}
           />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 6-12">
+        <PrismCode language="jsx" lineHighlight="2-3, 6-12">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 import moment from "moment";

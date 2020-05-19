@@ -29,9 +29,10 @@ export default function NoIconExample({ noHr = false }) {
             Toggle no icon
           </button>
         </div>
-        <PrismCode language="jsx" lineHighlight="1-2, 5, 8-16">
+        <PrismCode language="jsx" lineHighlight="1-3, 6, 9-17">
           {`import React, { useState } from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
+import moment from "moment";
 
 export default () => {
   const [noIcon, setNoIcon] = useState(false);

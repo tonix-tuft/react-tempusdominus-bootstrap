@@ -40,6 +40,7 @@ import BirthdayPickerExample from "./examples/BirthdayPickerExample";
 import KeepOpenExample from "./examples/KeepOpenExample";
 import KeyBindsExample from "./examples/KeyBindsExample";
 import MaxMinDateExample from "./examples/MaxMinDateExample";
+import ParseInputDateExample from "./examples/ParseInputDateExample";
 
 export default function App() {
   return (
@@ -188,6 +189,9 @@ export default function App() {
             <a href="#no-icon">No Icon</a>
           </li>
           <li>
+            <a href="#parse-input-date">Parse Input Date</a>
+          </li>
+          <li>
             <a href="#read-only">Read-Only</a>
           </li>
           <li>
@@ -235,6 +239,7 @@ export default function App() {
         <NoCollapseExample />
         <NoFocusOnShowExample />
         <NoIconExample />
+        <ParseInputDateExample />
         <ReadOnlyExample />
         <SideBySideExample />
         <TimePickerExample />

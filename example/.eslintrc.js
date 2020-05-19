@@ -28,13 +28,7 @@ module.exports = {
     "standard/computed-property-even-spacing": "off",
     "react/prop-types": 0,
     "comma-dangle": "off",
-    indent: [
-      "error",
-      2,
-      {
-        ignoredNodes: ["TemplateLiteral"],
-      },
-    ],
+    indent: "off",
     "template-curly-spacing": ["off"],
   },
   overrides: [],

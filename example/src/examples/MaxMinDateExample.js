@@ -29,9 +29,10 @@ export default function MaxMinDateExample({ noHr = false }) {
             maxDate={`${moment().add(4, "days").format("YYYY-MM-DD")} 23:59:39`}
           />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 6-11">
+        <PrismCode language="jsx" lineHighlight="2-3, 7-12">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
+import moment from "moment";
 
 export default () => (
   <>
