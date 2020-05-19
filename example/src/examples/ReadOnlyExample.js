@@ -29,7 +29,7 @@ export default function ReadOnlyExample({ noHr = false }) {
         <div className={styles.picker}>
           <InlineDateTimePicker readOnly={readOnly} />
           <button
-            className="btn btn-primary"
+            className={`${styles.exampleBtn} btn btn-primary`}
             onClick={() => setReadOnly(readOnly => !readOnly)}
           >
             {readOnly ? "Unset read-only" : "Set read-only"}

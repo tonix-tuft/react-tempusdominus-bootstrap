@@ -53,17 +53,20 @@ export default function ParseInputDateExample({ noHr = false }) {
         </h2>
         <div className={styles.picker}>
           <DateTimePicker parseInputDate={parseInputDate} date={date} />
-          <button className="btn btn-primary" onClick={() => setDate("today")}>
+          <button
+            className={`${styles.exampleBtn} btn btn-primary`}
+            onClick={() => setDate("today")}
+          >
             Set to today
           </button>
           <button
-            className="btn btn-primary"
+            className={`${styles.exampleBtn} btn btn-primary`}
             onClick={() => setDate("yesterday")}
           >
             Set to yesterday
           </button>
           <button
-            className="btn btn-primary"
+            className={`${styles.exampleBtn} btn btn-primary`}
             onClick={() => setDate("3 days ago")}
           >
             Set to 3 days ago

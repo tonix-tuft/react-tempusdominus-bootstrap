@@ -97,11 +97,9 @@ hr,
 .picker {
   width: 300px;
 
-  :global {
-    .btn {
-      margin-top: 10px;
-      margin-right: 10px;
-    }
+  .exampleBtn {
+    margin-top: 10px;
+    margin-right: 10px;
   }
 }
 

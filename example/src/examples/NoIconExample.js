@@ -23,7 +23,7 @@ export default function NoIconExample({ noHr = false }) {
         <div className={styles.picker}>
           <DateTimePicker noIcon={noIcon} format="LTS" date={moment()} />
           <button
-            className="btn btn-primary"
+            className={`${styles.exampleBtn} btn btn-primary`}
             onClick={() => setNoIcon(noIcon => !noIcon)}
           >
             Toggle no icon

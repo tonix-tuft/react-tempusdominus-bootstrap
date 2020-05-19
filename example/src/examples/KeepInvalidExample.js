@@ -22,7 +22,7 @@ export default function KeepInvalidExample({ noHr = false }) {
             onError={e => console.log("onError", e.date)}
           />
           <button
-            className="btn btn-primary"
+            className={`${styles.exampleBtn} btn btn-primary`}
             onClick={() => {
               pickerRef.current.datetimepicker(
                 "date",
