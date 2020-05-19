@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./App.module.scss";
 import moment from "moment";
+import Logo from "./Logo";
 import I18nExample from "./examples/I18nExample";
 import Installation from "./info/Installation";
 import TimePickerExample from "./examples/TimePickerExample";
@@ -65,6 +66,15 @@ export default function App() {
         A React wrapper for the Tempus Dominus Bootstrap plugin for date and
         time pickers.
       </em>
+
+      <div className={styles.logoContainer}>
+        <div className={styles.logo}>
+          <Logo />
+        </div>
+        <div className={styles.logoText}>
+          <strong>Cogito, ergo sum</strong>
+        </div>
+      </div>
 
       <div className={styles.pickerContainer}>
         <div className={styles.picker}>
