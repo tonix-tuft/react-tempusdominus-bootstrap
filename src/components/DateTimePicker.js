@@ -41,6 +41,7 @@ import { updateFactory, initFactory } from "../factories/initUpdateFactory";
 import { noIconFactory, yesIconFactory } from "../factories/iconFactory";
 import "bootstrap";
 import "tempusdominus-bootstrap";
+import "moment-timezone";
 import styles from "../styles.scss";
 import destroy from "../helpers/destroy";
 import { yesInlineFactory, noInlineFactory } from "../factories/inlineFactory";

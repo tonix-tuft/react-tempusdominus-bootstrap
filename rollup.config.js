@@ -6,6 +6,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import url from "@rollup/plugin-url";
 import svgr from "@svgr/rollup";
 import inject from "@rollup/plugin-inject";
+import json from "@rollup/plugin-json";
 
 import pkg from "./package.json";
 
@@ -28,6 +29,12 @@ export default {
   ],
   external: ["prop-types"],
   plugins: [
+    inject({
+      $: "jquery",
+      jQuery: "jquery",
+      moment: "moment",
+      exclude: "src/**",
+    }),
     external(),
     postcss({
       modules: true,
@@ -40,10 +47,6 @@ export default {
     }),
     resolve(),
     commonjs(),
-    inject({
-      $: "jquery",
-      jQuery: "jquery",
-      moment: "moment",
-    }),
+    json(),
   ],
 };
