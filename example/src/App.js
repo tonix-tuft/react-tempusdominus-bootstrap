@@ -48,6 +48,7 @@ import ToolbarPlacementExample from "./examples/ToolbarPlacementExample";
 import TooltipsExample from "./examples/TooltipsExample";
 import NoUseCurrentExample from "./examples/NoUseCurrentExample";
 import UseStrictExample from "./examples/UseStrictExample";
+import ViewDateExample from "./examples/ViewDateExample";
 
 export default function App() {
   return (
@@ -235,6 +236,9 @@ export default function App() {
             <a href="#use-strict">Use Strict</a>
           </li>
           <li>
+            <a href="#view-date">View Date</a>
+          </li>
+          <li>
             <a href="#with-seconds">With Seconds</a>
           </li>
         </ul>
@@ -283,6 +287,7 @@ export default function App() {
         <ToolbarPlacementExample />
         <TooltipsExample />
         <UseStrictExample />
+        <ViewDateExample />
         <WithSecondsExample noHr />
       </div>
       <footer>

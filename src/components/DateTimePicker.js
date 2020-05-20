@@ -91,6 +91,11 @@ const DateTimePicker = function DateTimePicker({
   options = useExtend(
     () => ({
       widgetParent: `#${widgetParentId}`,
+      useCurrent:
+        typeof options.useCurrent !== "undefined"
+          ? options.useCurrent
+          : typeof options.viewDate === "undefined" ||
+            options.viewDate === false,
     }),
     [options, optionsInvariantsMemo]
   );
