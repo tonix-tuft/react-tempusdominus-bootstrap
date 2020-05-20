@@ -24,8 +24,8 @@
     "react-scripts": "^3.4.1",
     "react-tempusdominus-bootstrap": "file:..",
     "scroll-to-element": "^2.0.3",
-    "tempusdominus": "^5.10.5",
-    "tempusdominus-bootstrap": "^5.20.9"
+    "tempusdominus": "^5.10.6",
+    "tempusdominus-bootstrap": "^5.20.10"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -56,7 +56,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^3.1.0",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.3"
   },
   "scripts": {
     "start": "react-scripts start",

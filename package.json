@@ -106,7 +106,7 @@
     "rollup": "^1.32.1",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.8.2",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.3"
   },
   "files": [
     "dist"
@@ -116,7 +116,7 @@
     "prop-types": "^15.7.2",
     "react-js-utl": "^1.46.2",
     "react-moment-hooks": "^2.16.1",
-    "tempusdominus": "^5.10.5",
-    "tempusdominus-bootstrap": "^5.20.9"
+    "tempusdominus": "^5.10.6",
+    "tempusdominus-bootstrap": "^5.20.10"
   }
 }
