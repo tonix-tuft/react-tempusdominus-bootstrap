@@ -21,28 +21,31 @@ A React wrapper for the Tempus Dominus Bootstrap plugin for date and time picker
 
 | Features                                |     |
 | --------------------------------------- | --- |
-| ES6-Compliant                           | ✅  |
 | Based On Bootstrap 4                    | ✅  |
-| Date Time Picker                        | ✅  |
-| i18n                                    | ✅  |
-| Time Picker                             | ✅  |
-| Date Picker                             | ✅  |
-| Month Picker                            | ✅  |
-| No Icon                                 | ✅  |
-| Default Date                            | ✅  |
-| Multidate                               | ✅  |
+| Controlled Date Time Picker Component   | ✅  |
+| Custom Icons                            | ✅  |
 | Custom Multidate Separator              | ✅  |
-| Side By Side                            | ✅  |
-| With Seconds                            | ✅  |
-| Inline Date Time Picker                 | ✅  |
-| Inline Date Time Picker Side By Side    | ✅  |
+| Date Picker                             | ✅  |
+| Date Time Picker                        | ✅  |
+| Default Date                            | ✅  |
 | Disabled Dates                          | ✅  |
 | Disabled Days Of Week                   | ✅  |
-| Linked Pickers                          | ✅  |
-| Custom Icons                            | ✅  |
+| ES6-Compliant                           | ✅  |
 | Event Listeners                         | ✅  |
+| Inline Date Time Picker                 | ✅  |
+| Inline Date Time Picker Side By Side    | ✅  |
+| Linked Pickers                          | ✅  |
+| Month Picker                            | ✅  |
+| Multidate                               | ✅  |
+| No Icon                                 | ✅  |
+| Side By Side                            | ✅  |
+| Time Picker                             | ✅  |
+| Time Zones                              | ✅  |
 | Uncontrolled Date Time Picker Component | ✅  |
-| Controlled Date Time Picker Component   | ✅  |
+| With Seconds                            | ✅  |
+| i18n                                    | ✅  |
+
+And more...
 
 ## Installation
 
