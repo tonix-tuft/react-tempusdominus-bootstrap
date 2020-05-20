@@ -45,6 +45,7 @@ import ParseInputDateExample from "./examples/ParseInputDateExample";
 import SteppingExample from "./examples/SteppingExample";
 import TimeZoneExample from "./examples/TimeZoneExample";
 import ToolbarPlacementExample from "./examples/ToolbarPlacementExample";
+import TooltipsExample from "./examples/TooltipsExample";
 
 export default function App() {
   return (
@@ -223,6 +224,9 @@ export default function App() {
             <a href="#toolbar-placement">Toolbar Placement</a>
           </li>
           <li>
+            <a href="#tooltips">Tooltips</a>
+          </li>
+          <li>
             <a href="#with-seconds">With Seconds</a>
           </li>
         </ul>
@@ -268,6 +272,7 @@ export default function App() {
         <TimePickerExample />
         <TimeZoneExample />
         <ToolbarPlacementExample />
+        <TooltipsExample />
         <WithSecondsExample noHr />
       </div>
       <footer>
