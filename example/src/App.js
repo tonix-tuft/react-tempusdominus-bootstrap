@@ -49,6 +49,7 @@ import TooltipsExample from "./examples/TooltipsExample";
 import NoUseCurrentExample from "./examples/NoUseCurrentExample";
 import UseStrictExample from "./examples/UseStrictExample";
 import ViewDateExample from "./examples/ViewDateExample";
+import ViewModeExample from "./examples/ViewModeExample";
 
 export default function App() {
   return (
@@ -239,6 +240,9 @@ export default function App() {
             <a href="#view-date">View Date</a>
           </li>
           <li>
+            <a href="#view-mode">View Mode</a>
+          </li>
+          <li>
             <a href="#with-seconds">With Seconds</a>
           </li>
         </ul>
@@ -288,6 +292,7 @@ export default function App() {
         <TooltipsExample />
         <UseStrictExample />
         <ViewDateExample />
+        <ViewModeExample />
         <WithSecondsExample noHr />
       </div>
       <footer>
