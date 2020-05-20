@@ -46,6 +46,7 @@ import SteppingExample from "./examples/SteppingExample";
 import TimeZoneExample from "./examples/TimeZoneExample";
 import ToolbarPlacementExample from "./examples/ToolbarPlacementExample";
 import TooltipsExample from "./examples/TooltipsExample";
+import NoUseCurrentExample from "./examples/NoUseCurrentExample";
 
 export default function App() {
   return (
@@ -203,6 +204,9 @@ export default function App() {
             <a href="#no-icon">No Icon</a>
           </li>
           <li>
+            <a href="#no-use-current">No Use Current</a>
+          </li>
+          <li>
             <a href="#parse-input-date">Parse Input Date</a>
           </li>
           <li>
@@ -265,6 +269,7 @@ export default function App() {
         <NoCollapseExample />
         <NoFocusOnShowExample />
         <NoIconExample />
+        <NoUseCurrentExample />
         <ParseInputDateExample />
         <ReadOnlyExample />
         <SideBySideExample />
