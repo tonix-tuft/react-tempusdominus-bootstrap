@@ -350,6 +350,8 @@ Then restart you app again.
 
 ## Contributing
 
+TODO
+
 ## License
 
 MIT © [Anton Bagdatyev (Tonix)](https://github.com/tonix-tuft)
