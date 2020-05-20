@@ -12,7 +12,6 @@ A React wrapper for the Tempus Dominus Bootstrap plugin for date and time picker
  <strong>Cogito, ergo sum</strong>
 </p>
 
-<br/>
 <p align="center">
   <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap.gif" />
 </p>
