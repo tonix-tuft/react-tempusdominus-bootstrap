@@ -51,6 +51,7 @@ import UseStrictExample from "./examples/UseStrictExample";
 import ViewDateExample from "./examples/ViewDateExample";
 import ViewModeExample from "./examples/ViewModeExample";
 import WidgetPositioningExample from "./examples/WidgetPositioningExample";
+import ProgrammaticAPIExample from "./examples/ProgrammaticAPIExample";
 
 export default function App() {
   return (
@@ -214,6 +215,9 @@ export default function App() {
             <a href="#parse-input-date">Parse Input Date</a>
           </li>
           <li>
+            <a href="#programmatic-api">Programmatic API</a>
+          </li>
+          <li>
             <a href="#read-only">Read-Only</a>
           </li>
           <li>
@@ -287,6 +291,7 @@ export default function App() {
         <NoIconExample />
         <NoUseCurrentExample />
         <ParseInputDateExample />
+        <ProgrammaticAPIExample />
         <ReadOnlyExample />
         <SideBySideExample />
         <SteppingExample />
