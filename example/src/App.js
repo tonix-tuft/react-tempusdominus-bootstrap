@@ -47,6 +47,7 @@ import TimeZoneExample from "./examples/TimeZoneExample";
 import ToolbarPlacementExample from "./examples/ToolbarPlacementExample";
 import TooltipsExample from "./examples/TooltipsExample";
 import NoUseCurrentExample from "./examples/NoUseCurrentExample";
+import UseStrictExample from "./examples/UseStrictExample";
 
 export default function App() {
   return (
@@ -231,6 +232,9 @@ export default function App() {
             <a href="#tooltips">Tooltips</a>
           </li>
           <li>
+            <a href="#use-strict">Use Strict</a>
+          </li>
+          <li>
             <a href="#with-seconds">With Seconds</a>
           </li>
         </ul>
@@ -278,6 +282,7 @@ export default function App() {
         <TimeZoneExample />
         <ToolbarPlacementExample />
         <TooltipsExample />
+        <UseStrictExample />
         <WithSecondsExample noHr />
       </div>
       <footer>
