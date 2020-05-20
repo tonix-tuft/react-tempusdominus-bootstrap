@@ -50,6 +50,7 @@ import NoUseCurrentExample from "./examples/NoUseCurrentExample";
 import UseStrictExample from "./examples/UseStrictExample";
 import ViewDateExample from "./examples/ViewDateExample";
 import ViewModeExample from "./examples/ViewModeExample";
+import WidgetPositioningExample from "./examples/WidgetPositioningExample";
 
 export default function App() {
   return (
@@ -243,6 +244,9 @@ export default function App() {
             <a href="#view-mode">View Mode</a>
           </li>
           <li>
+            <a href="#widget-positioning-example">Widget Positioning Example</a>
+          </li>
+          <li>
             <a href="#with-seconds">With Seconds</a>
           </li>
         </ul>
@@ -293,6 +297,7 @@ export default function App() {
         <UseStrictExample />
         <ViewDateExample />
         <ViewModeExample />
+        <WidgetPositioningExample />
         <WithSecondsExample noHr />
       </div>
       <footer>
