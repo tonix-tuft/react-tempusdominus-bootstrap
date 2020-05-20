@@ -2,7 +2,7 @@
 
 A React wrapper for the Tempus Dominus Bootstrap plugin for date and time pickers.
 
-[![NPM](https://img.shields.io/npm/v/react-tempusdominus-bootstrap.svg)](https://www.npmjs.com/package/react-tempusdominus-bootstrap) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![NPM](https://img.shields.io/npm/v/react-tempusdominus-bootstrap.svg)](https://www.npmjs.com/package/react-tempusdominus-bootstrap) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap-logo.svg" width="200" />
