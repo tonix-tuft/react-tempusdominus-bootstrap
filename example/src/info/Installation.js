@@ -23,7 +23,7 @@ const Installation = () => {
         className="prism-code-below-text"
         language="bash"
       >
-        npm i --save react react-dom font-awesome moment-utl
+        npm install --save react react-dom font-awesome moment-utl feather-icons
       </PrismCode>
     </div>
   );

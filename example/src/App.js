@@ -52,6 +52,7 @@ import ViewDateExample from "./examples/ViewDateExample";
 import ViewModeExample from "./examples/ViewModeExample";
 import WidgetPositioningExample from "./examples/WidgetPositioningExample";
 import ProgrammaticAPIExample from "./examples/ProgrammaticAPIExample";
+import FeatherIconsExample from "./examples/FeatherIconsExample";
 
 export default function App() {
   return (
@@ -168,6 +169,9 @@ export default function App() {
             <a href="#extra-formats">Extra Formats</a>
           </li>
           <li>
+            <a href="#feather-icons">Feather Icons</a>
+          </li>
+          <li>
             <a href="#i18n">i18n</a>
           </li>
           <li>
@@ -276,6 +280,7 @@ export default function App() {
         <EnabledHoursExample />
         <EventListenersExample />
         <ExtraFormatsExample />
+        <FeatherIconsExample />
         <I18nExample />
         <InlineDateTimePickerExample />
         <InlineDateTimePickerSideBySideExample />

@@ -33,6 +33,7 @@ export default {
       $: "jquery",
       jQuery: "jquery",
       moment: "moment",
+      feather: "feather-icons",
       exclude: "src/**",
     }),
     external(),

@@ -7,9 +7,10 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
+    "feather-icons": "^4.28.0",
     "immutable-linked-ordered-map": "^1.9.0",
     "jquery": "^3.5.1",
-    "js-utl": "^4.11.0",
+    "js-utl": "^4.12.1",
     "moment": "~2.24.0",
     "moment-utl": "^2.8.0",
     "popper.js": "^1.16.1",
@@ -19,13 +20,13 @@
     "react": "file:../node_modules/react",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.4.1",
-    "react-js-utl": "^1.46.2",
+    "react-js-utl": "^1.47.1",
     "react-router": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-tempusdominus-bootstrap": "file:..",
     "scroll-to-element": "^2.0.3",
-    "tempusdominus": "^5.10.6",
-    "tempusdominus-bootstrap": "^5.20.10"
+    "tempusdominus": "^5.11.0",
+    "tempusdominus-bootstrap": "^5.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
