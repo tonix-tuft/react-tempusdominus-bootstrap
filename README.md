@@ -38,6 +38,7 @@ A React wrapper for the Tempus Dominus Bootstrap plugin for date and time picker
 | Multidate                               | ✅  |
 | No Icon                                 | ✅  |
 | Side By Side                            | ✅  |
+| Support for Feather icons               | ✅  |
 | Time Picker                             | ✅  |
 | Time Zones                              | ✅  |
 | Uncontrolled Date Time Picker Component | ✅  |
