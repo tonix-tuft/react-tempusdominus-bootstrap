@@ -45,7 +45,7 @@ export default function FeatherIconsExample({ noHr = false }) {
             }}
           />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 5-19">
+        <PrismCode language="jsx" lineHighlight="2, 6-32">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
