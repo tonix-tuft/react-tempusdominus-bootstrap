@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-tempusdominus-bootstrap/precache-manifest.ba0d00944756eafac69a9ff2fde13e68.js"
+  "/react-tempusdominus-bootstrap/precache-manifest.f12d6f7c5d03abba344125735f0cd00d.js"
 );
 
 self.addEventListener('message', (event) => {
