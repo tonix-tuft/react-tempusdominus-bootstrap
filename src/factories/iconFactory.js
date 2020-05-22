@@ -24,6 +24,7 @@
  */
 
 import React from "react";
+import feather from "feather-icons";
 
 /**
  * @type {Object}
@@ -36,6 +37,29 @@ const propsWithId = id => ({ id });
 
 const objIdentity = () => ({});
 
+const noOpFn = () => {};
+
+const noIconTypeFactory = {
+  icon: () => null,
+  handle: noOpFn,
+};
+
+const fontAwesomeIconTypeFactory = {
+  icon: ({ iconClassName }) => <i className={`fa ${iconClassName}`} />,
+  handle: noOpFn,
+};
+
+const featherIconTypeFactory = {
+  icon: () => null,
+  handle: ({ iconContainerId, icon }) => {
+    const element = document.getElementById(iconContainerId);
+    if (element) {
+      const featherIcon = feather.icons[icon] || feather.icons.calendar;
+      element.innerHTML = featherIcon.toSvg();
+    }
+  },
+};
+
 const yesIconFactory = {
   divProps: id => ({
     key: `${id}_1`,
@@ -43,15 +67,19 @@ const yesIconFactory = {
     ...propsWithId(id),
   }),
   inputProps: objIdentity,
-  inputGroupAppend: id => iconClassName => (
+  inputGroupAppend: id => ({
+    iconClassName,
+    iconTypeFactory,
+    iconContainerId,
+  }) => (
     <div
       key={`${id}_2`}
       className="input-group-append"
       data-target={`#${id}`}
       data-toggle="datetimepicker"
     >
-      <div className="input-group-text">
-        <i className={`fa ${iconClassName}`} />
+      <div className="input-group-text" id={iconContainerId}>
+        {iconTypeFactory.icon({ iconClassName })}
       </div>
     </div>
   ),
@@ -65,4 +93,10 @@ const noIconFactory = {
   divClassName: false,
 };
 
-export { yesIconFactory, noIconFactory };
+export {
+  yesIconFactory,
+  noIconFactory,
+  fontAwesomeIconTypeFactory,
+  featherIconTypeFactory,
+  noIconTypeFactory,
+};

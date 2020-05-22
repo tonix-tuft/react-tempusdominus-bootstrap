@@ -28,7 +28,15 @@ import { classNames } from "react-js-utl/utils";
 import styles from "../styles.scss";
 
 const noInlineFactory = {
-  div: ({ id, iconFactory, autocomplete, iconClassName, readOnly }) => {
+  div: ({
+    id,
+    iconFactory,
+    autocomplete,
+    iconClassName,
+    readOnly,
+    iconTypeFactory,
+    iconContainerId,
+  }) => {
     return (
       <div
         className={classNames(
@@ -48,7 +56,11 @@ const noInlineFactory = {
           readOnly={readOnly ? true : void 0}
           {...iconFactory.inputProps(id)}
         />
-        {iconFactory.inputGroupAppend(id)(iconClassName)}
+        {iconFactory.inputGroupAppend(id)({
+          iconClassName,
+          iconTypeFactory,
+          iconContainerId,
+        })}
       </div>
     );
   },

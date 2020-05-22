@@ -38,7 +38,13 @@ import {
 } from "react-js-utl/hooks";
 import { useLocale } from "react-moment-hooks";
 import { updateFactory, initFactory } from "../factories/initUpdateFactory";
-import { noIconFactory, yesIconFactory } from "../factories/iconFactory";
+import {
+  noIconFactory,
+  yesIconFactory,
+  fontAwesomeIconTypeFactory,
+  featherIconTypeFactory,
+  noIconTypeFactory,
+} from "../factories/iconFactory";
 import "bootstrap";
 import "tempusdominus-bootstrap";
 import "moment-timezone";
@@ -55,6 +61,7 @@ const DateTimePicker = function DateTimePicker({
   className = void 0,
   autocomplete = "off",
   iconClassName = "fa-calendar",
+  icon = "calendar",
   noIcon = false,
   pickerRef = void 0,
   showOnInputFocus = true,
@@ -71,6 +78,7 @@ const DateTimePicker = function DateTimePicker({
   const isFirstRenderEver = !useIsUpdate();
   const id = useUniqueKey(noIcon);
   const prevId = usePrevious(id);
+  const iconContainerId = useUniqueKey();
   const prevLocale = usePrevious(locale);
   const isNewInit = typeof prevId === "undefined" || id !== prevId;
   const localeDidChange = locale !== prevLocale;
@@ -130,6 +138,16 @@ const DateTimePicker = function DateTimePicker({
     [noIcon]
   );
 
+  const iconType = options.icons ? options.icons.type : void 0;
+  const iconTypeFactory = useFactory(
+    () => [
+      [noIcon, noIconTypeFactory],
+      [() => iconType === "feather", featherIconTypeFactory],
+      fontAwesomeIconTypeFactory,
+    ],
+    [iconType, noIcon]
+  );
+
   const inlineFactory = useFactory(
     () => [[inline, yesInlineFactory], noInlineFactory],
     [inline]
@@ -148,6 +166,10 @@ const DateTimePicker = function DateTimePicker({
       }
     },
   });
+
+  useEffect(() => {
+    iconTypeFactory.handle({ iconContainerId, icon });
+  }, [iconTypeFactory, iconContainerId, icon]);
 
   useEffect(() => {
     if (!isNewInit) {
@@ -200,6 +222,8 @@ const DateTimePicker = function DateTimePicker({
         autocomplete,
         iconClassName,
         readOnly,
+        iconTypeFactory,
+        iconContainerId,
       })}
       <div id={widgetParentId} />
     </div>

@@ -31,26 +31,54 @@ export default function FeatherIconsExample({ noHr = false }) {
             }}
           />
         </div>
-        <PrismCode language="jsx" lineHighlight="2, 5-9">
+        <div className={styles.picker}>
+          <DateTimePicker
+            icons={{
+              type: "feather",
+              clear: "trash",
+              close: "x-circle",
+            }}
+            buttons={{
+              showToday: true,
+              showClear: true,
+              showClose: true,
+            }}
+          />
+        </div>
+        <PrismCode language="jsx" lineHighlight="2, 5-19">
           {`import React from "react";
 import { DateTimePicker } from "react-tempusdominus-bootstrap";
 
 export default () => (
-  <DateTimePicker
-    icons={{
-      type: "feather",
-    }}
-  />
-  <DateTimePicker
-    icons={{
-      type: "feather",
-    }}
-    buttons={{
-      showToday: true,
-      showClear: true,
-      showClose: true,
-    }}
-  />
+  <>
+    <DateTimePicker
+      icons={{
+        type: "feather",
+      }}
+    />
+    <DateTimePicker
+      icons={{
+        type: "feather",
+      }}
+      buttons={{
+        showToday: true,
+        showClear: true,
+        showClose: true,
+      }}
+    />
+    <DateTimePicker
+      icons={{
+        type: "feather",
+        clear: "trash",
+        close: "x-circle",
+      }}
+      buttons={{
+        showToday: true,
+        showClear: true,
+        showClose: true,
+      }}
+    />
+  </>
 );`}
         </PrismCode>
       </div>
