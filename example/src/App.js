@@ -53,6 +53,7 @@ import ViewModeExample from "./examples/ViewModeExample";
 import WidgetPositioningExample from "./examples/WidgetPositioningExample";
 import ProgrammaticAPIExample from "./examples/ProgrammaticAPIExample";
 import FeatherIconsExample from "./examples/FeatherIconsExample";
+import PromptTimeOnDateChangeExample from "./examples/PromptTimeOnDateChangeExample";
 
 export default function App() {
   return (
@@ -222,6 +223,9 @@ export default function App() {
             <a href="#programmatic-api">Programmatic API</a>
           </li>
           <li>
+            <a href="#prompt-time-on-date-change">Prompt Time On Date Change</a>
+          </li>
+          <li>
             <a href="#read-only">Read-Only</a>
           </li>
           <li>
@@ -297,6 +301,7 @@ export default function App() {
         <NoUseCurrentExample />
         <ParseInputDateExample />
         <ProgrammaticAPIExample />
+        <PromptTimeOnDateChangeExample />
         <ReadOnlyExample />
         <SideBySideExample />
         <SteppingExample />
