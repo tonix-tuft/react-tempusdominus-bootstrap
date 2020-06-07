@@ -72,6 +72,7 @@ const DateTimePicker = function DateTimePicker({
   onChange = () => {},
   onError = () => {},
   onUpdate = () => {},
+  callback = () => {},
   ...options
 } = {}) {
   const { inline, locale } = options;
@@ -121,6 +122,7 @@ const DateTimePicker = function DateTimePicker({
   });
   const onErrorRef = useCallbackRef(onError);
   const onUpdateRef = useCallbackRef(onUpdate);
+  const callbackRef = useCallbackRef(callback);
 
   const allOptions = options;
   options = useCumulativeShallowDiff(options);
@@ -153,6 +155,10 @@ const DateTimePicker = function DateTimePicker({
     [inline]
   );
 
+  useEffect(() => {
+    pickerRef && (pickerRef.current = getPicker(id));
+  }, [id, pickerRef]);
+
   useLocale(locale, {
     callback: momentLocale => {
       momentLocaleRef.current = momentLocale;
@@ -164,20 +170,18 @@ const DateTimePicker = function DateTimePicker({
           locale: momentLocaleRef.current,
         });
       }
+      callbackRef.current();
     },
   });
 
   useEffect(() => {
-    iconTypeFactory.handle({ iconContainerId, icon });
-  }, [iconTypeFactory, iconContainerId, icon]);
-
-  useEffect(() => {
-    if (!isNewInit) {
+    if (!isNewInit || (!isFirstRenderEver && !localeDidChange)) {
+      // Only if the locale didn't change, then init the picker
+      // (otherwise it will be initialized once the locale gets loaded, cause the locale changed)
       initUpdateFactory.setOptions(id)(options);
-    } else if (!isFirstRenderEver && !localeDidChange) {
-      // Only if the locale didn't change, init the picker
-      // (otherwise it will be initialized once the locale gets loaded, cause it changed).
-      initUpdateFactory.setOptions(id)(options);
+    }
+    if (!isFirstRenderEver && !localeDidChange) {
+      callbackRef.current();
     }
   }, [
     isNewInit,
@@ -186,11 +190,12 @@ const DateTimePicker = function DateTimePicker({
     initUpdateFactory,
     id,
     options,
+    callbackRef,
   ]);
 
   useEffect(() => {
-    pickerRef && (pickerRef.current = getPicker(id));
-  }, [id, pickerRef]);
+    iconTypeFactory.handle({ iconContainerId, icon });
+  }, [iconTypeFactory, iconContainerId, icon]);
 
   useEffect(() => {
     turnOnEventListeners(id, [
