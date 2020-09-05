@@ -1,6 +1,6 @@
 {
   "name": "react-tempusdominus-bootstrap",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A React wrapper for the Tempus Dominus Bootstrap plugin for date and time pickers.",
   "author": "Anton Bagdatyev (Tonix)",
   "license": "MIT",
