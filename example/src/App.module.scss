@@ -13,6 +13,10 @@
 }
 
 .heading {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+
   h1,
   div,
   a {
@@ -20,8 +24,15 @@
     vertical-align: middle;
   }
 
+  .goodies {
+    white-space: wrap;
+  }
+
   h1 {
-    margin-right: 50px;
+    padding-right: 50px;
+    font-size: 2em;
+    max-width: 100%;
+    flex: auto;
   }
 
   a {
@@ -101,7 +112,6 @@ hr,
 
 .pickerContainer {
   width: 100%;
-  min-width: 300px;
   max-width: 800px;
   text-align: center;
 
@@ -111,7 +121,7 @@ hr,
 }
 
 .picker {
-  width: 300px;
+  max-width: 300px;
 
   .exampleBtn {
     margin-top: 10px;
@@ -121,7 +131,6 @@ hr,
 
 .examples .inlinePicker {
   width: 100%;
-  min-width: 300px;
   max-width: 800px;
 }
 
@@ -129,6 +138,7 @@ h2 {
   display: inline-block;
   padding-top: 15px;
   margin-bottom: 20px;
+  font-size: 1.6em;
 }
 
 .copyright {

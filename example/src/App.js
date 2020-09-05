@@ -60,7 +60,7 @@ export default function App() {
     <div className={styles.App}>
       <div className={styles.heading}>
         <h1>react-tempusdominus-bootstrap</h1>
-        <div>
+        <div className={styles.goodies}>
           <a
             className={styles.GitHub}
             href="https://github.com/tonix-tuft/react-tempusdominus-bootstrap"

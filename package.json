@@ -72,7 +72,7 @@
     "@babel/preset-react": "^7.10.1",
     "@babel/traverse": "^7.10.1",
     "@babel/types": "^7.10.2",
-    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-babel": "^5.2.0",
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-inject": "^4.0.2",
     "@rollup/plugin-json": "^4.1.0",
@@ -81,12 +81,12 @@
     "@svgr/rollup": "^4.3.3",
     "babel-eslint": "10.1.0",
     "babel-loader": "^8.1.0",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "cross-env": "^6.0.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
@@ -104,9 +104,9 @@
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.3",
     "rollup": "^1.32.1",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-postcss": "^2.8.2",
     "typescript": "^3.9.5"
   },
@@ -114,11 +114,11 @@
     "dist"
   ],
   "dependencies": {
-    "immutable-linked-ordered-map": "^1.14.0",
+    "immutable-linked-ordered-map": "^1.17.0",
     "prop-types": "^15.7.2",
-    "react-js-utl": "^1.53.1",
-    "react-moment-hooks": "^2.17.0",
-    "tempusdominus": "^5.12.0",
-    "tempusdominus-bootstrap": "^5.23.0"
+    "react-js-utl": "^1.63.1",
+    "react-moment-hooks": "^2.18.0",
+    "tempusdominus": "^5.15.2",
+    "tempusdominus-bootstrap": "^5.32.1"
   }
 }
