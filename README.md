@@ -99,6 +99,9 @@ import {
   TimePicker,
   MonthPicker,
   InlineDateTimePicker,
+  InlineDatePicker,
+  InlineTimePicker,
+  InlineMonthPicker,
 } from "react-tempusdominus-bootstrap";
 
 export default () => (
@@ -108,6 +111,9 @@ export default () => (
     <TimePicker />
     <MonthPicker />
     <InlineDateTimePicker />
+    <InlineDatePicker />
+    <InlineTimePicker />
+    <InlineMonthPicker />
   </>
 );
 ```
@@ -123,6 +129,10 @@ Check out the [demo](https://tonix-tuft.github.io/react-tempusdominus-bootstrap)
 - [TimePicker](#timepicker)
 - [MonthPicker](#monthpicker)
 - [InlineDateTimePicker](#inlinedatetimepicker)
+- [InlineDatePicker](#inlinedatepicker)
+- [InlineTimePicker](#inlinetimepicker)
+- [InlineMonthPicker](#inlinemonthpicker)
+
 
 ### DateTimePicker
 
@@ -291,6 +301,57 @@ export default () => (
 ```
 
 All the props of [DateTimePicker](#datetimepicker) theoretically apply to this component as well.
+
+### InlineDatePicker
+
+The `InlineDatePicker` component renders a [DatePicker](#datepicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+```jsx
+import React from "react";
+import { InlineDatePicker } from "react-tempusdominus-bootstrap";
+
+export default () => (
+  <>
+    <InlineDatePicker />
+  </>
+);
+```
+
+All the `props` of [DatePicker](#datepicker) theoretically apply to this component as well.
+
+### InlineTimePicker
+
+The `InlineTimePicker` component renders a [TimePicker](#timepicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+```jsx
+import React from "react";
+import { InlineTimePicker } from "react-tempusdominus-bootstrap";
+
+export default () => (
+  <>
+    <InlineTimePicker />
+  </>
+);
+```
+
+All the `props` of [TimePicker](#timepicker) theoretically apply to this component as well.
+
+### InlineMonthPicker
+
+The `InlineMonthPicker` component renders a [MonthPicker](#monthpicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+```jsx
+import React from "react";
+import { InlineMonthPicker } from "react-tempusdominus-bootstrap";
+
+export default () => (
+  <>
+    <InlineMonthPicker />
+  </>
+);
+```
+
+All the `props` of [MonthPicker](#monthpicker) theoretically apply to this component as well.
 
 Back to [API](#api).
 

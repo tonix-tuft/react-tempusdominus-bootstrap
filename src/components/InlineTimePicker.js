@@ -23,22 +23,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import DateTimePicker from "./components/DateTimePicker";
-import DatePicker from "./components/DatePicker";
-import TimePicker from "./components/TimePicker";
-import MonthPicker from "./components/MonthPicker";
-import InlineDateTimePicker from "./components/InlineDateTimePicker";
-import InlineDatePicker from "./components/InlineDatePicker";
-import InlineTimePicker from "./components/InlineTimePicker";
-import InlineMonthPicker from "./components/InlineMonthPicker";
+import React from "react";
+import TimePicker from "./TimePicker";
 
-export {
-  DateTimePicker,
-  DatePicker,
-  TimePicker,
-  MonthPicker,
-  InlineDateTimePicker,
-  InlineDatePicker,
-  InlineTimePicker,
-  InlineMonthPicker,
+const InlineTimePicker = function InlineTimePicker({ ...props } = {}) {
+  return <TimePicker inline {...props} />;
 };
+InlineTimePicker.displayName = "InlineTimePicker";
+export default InlineTimePicker;
