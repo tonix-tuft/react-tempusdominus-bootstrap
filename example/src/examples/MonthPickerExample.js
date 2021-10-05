@@ -22,6 +22,7 @@ import { MonthPicker } from "react-tempusdominus-bootstrap";
 export default () =>
   <MonthPicker />;`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

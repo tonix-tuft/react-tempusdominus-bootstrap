@@ -22,6 +22,7 @@ import { DatePicker } from "react-tempusdominus-bootstrap";
 export default () =>
   <DatePicker />;`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

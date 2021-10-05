@@ -23,6 +23,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+/**
+ * @author 67726e
+ * @see https://github.com/67726e
+ */
+
 import React from "react";
 import DatePicker from "./DatePicker";
 

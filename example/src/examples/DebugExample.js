@@ -23,6 +23,7 @@ export default () => (
   <DateTimePicker debug />
 );`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

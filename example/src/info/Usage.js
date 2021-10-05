@@ -53,6 +53,9 @@ import {
   TimePicker,
   MonthPicker,
   InlineDateTimePicker,
+  InlineDatePicker,
+  InlineTimePicker,
+  InlineMonthPicker,
 } from "react-tempusdominus-bootstrap";
 
 export default () => (
@@ -62,6 +65,9 @@ export default () => (
     <TimePicker />
     <MonthPicker />
     <InlineDateTimePicker />
+    <InlineDatePicker />
+    <InlineTimePicker />
+    <InlineMonthPicker />
   </>
 );`}
       </PrismCode>

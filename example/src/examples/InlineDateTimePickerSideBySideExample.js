@@ -27,6 +27,7 @@ import { InlineDateTimePicker } from "react-tempusdominus-bootstrap";
 export default () =>
   <InlineDateTimePicker sideBySide />;`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

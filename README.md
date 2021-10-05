@@ -133,7 +133,6 @@ Check out the [demo](https://tonix-tuft.github.io/react-tempusdominus-bootstrap)
 - [InlineTimePicker](#inlinetimepicker)
 - [InlineMonthPicker](#inlinemonthpicker)
 
-
 ### DateTimePicker
 
 The `DateTimePicker` component is the main fully featured component which allows a user to select a date and a time.
@@ -302,9 +301,15 @@ export default () => (
 
 All the props of [DateTimePicker](#datetimepicker) theoretically apply to this component as well.
 
+Back to [API](#api).
+
 ### InlineDatePicker
 
 The `InlineDatePicker` component renders a [DatePicker](#datepicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap-inlinedatepicker.gif" />
+</p>
 
 ```jsx
 import React from "react";
@@ -319,9 +324,15 @@ export default () => (
 
 All the `props` of [DatePicker](#datepicker) theoretically apply to this component as well.
 
+Back to [API](#api).
+
 ### InlineTimePicker
 
 The `InlineTimePicker` component renders a [TimePicker](#timepicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap-inlinetimepicker.gif" />
+</p>
 
 ```jsx
 import React from "react";
@@ -336,9 +347,15 @@ export default () => (
 
 All the `props` of [TimePicker](#timepicker) theoretically apply to this component as well.
 
+Back to [API](#api).
+
 ### InlineMonthPicker
 
 The `InlineMonthPicker` component renders a [MonthPicker](#monthpicker) component under the hood (composition) with the `inline` prop set to `true`.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/react-tempusdominus-bootstrap-inlinemonthpicker.gif" />
+</p>
 
 ```jsx
 import React from "react";
@@ -401,7 +418,7 @@ You can find the available list of options and functions exposed by the Tempus D
 
 | ![Chrome](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/chrome-logo-48x48.png) | ![Firefox](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/firefox-logo-48x48.png) | ![Safari](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/safari-logo-48x48.png) | ![Opera](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/opera-logo-48x48.png) | ![Edge](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/edge-logo-48x48.png) | ![IE 11](https://raw.githubusercontent.com/tonix-tuft/react-tempusdominus-bootstrap/master/repo/img/ie11-logo-flat-color-48x48.png) |
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| ✓ Latest                                                                                                                    | ✓ Latest                                                                                                                      | ✓ Latest                                                                                                                    | ✓ Latest                                                                                                                  | ✓ Latest                                                                                                                | IE 11 (Instructions below)                                                                                                                              |
+| ✓ Latest                                                                                                                    | ✓ Latest                                                                                                                      | ✓ Latest                                                                                                                    | ✓ Latest                                                                                                                  | ✓ Latest                                                                                                                | IE 11 (Instructions below)                                                                                                          |
 
 ### IE 11
 

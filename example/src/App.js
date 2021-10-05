@@ -54,6 +54,9 @@ import WidgetPositioningExample from "./examples/WidgetPositioningExample";
 import ProgrammaticAPIExample from "./examples/ProgrammaticAPIExample";
 import FeatherIconsExample from "./examples/FeatherIconsExample";
 import PromptTimeOnDateChangeExample from "./examples/PromptTimeOnDateChangeExample";
+import InlineDatePickerExample from "./examples/InlineDatePickerExample";
+import InlineMonthPickerExample from "./examples/InlineMonthPickerExample";
+import InlineTimePickerExample from "./examples/InlineTimePickerExample";
 
 export default function App() {
   return (
@@ -176,12 +179,21 @@ export default function App() {
             <a href="#i18n">i18n</a>
           </li>
           <li>
+            <a href="#inline-date-picker">Inline Date Picker</a>
+          </li>
+          <li>
             <a href="#inline-date-time-picker">Inline Date Time Picker</a>
           </li>
           <li>
             <a href="#inline-date-time-picker-side-by-side">
               Inline Date Time Picker Side By Side
             </a>
+          </li>
+          <li>
+            <a href="#inline-month-picker">Inline Month Picker</a>
+          </li>
+          <li>
+            <a href="#inline-time-picker">Inline Time Picker</a>
           </li>
           <li>
             <a href="#keep-invalid">Keep Invalid</a>
@@ -286,8 +298,11 @@ export default function App() {
         <ExtraFormatsExample />
         <FeatherIconsExample />
         <I18nExample />
+        <InlineDatePickerExample />
         <InlineDateTimePickerExample />
         <InlineDateTimePickerSideBySideExample />
+        <InlineMonthPickerExample />
+        <InlineTimePickerExample />
         <KeepInvalidExample />
         <KeepOpenExample />
         <KeyBindsExample />
