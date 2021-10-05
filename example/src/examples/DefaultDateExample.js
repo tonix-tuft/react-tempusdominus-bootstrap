@@ -22,6 +22,7 @@ import { DateTimePicker } from "react-tempusdominus-bootstrap";
 export default () =>
   <DateTimePicker defaultDate="2020-05-26" />;`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

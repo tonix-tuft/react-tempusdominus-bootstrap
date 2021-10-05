@@ -22,6 +22,7 @@ import { DateTimePicker } from "react-tempusdominus-bootstrap";
 export default () =>
   <DateTimePicker allowMultidate />;`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

@@ -23,22 +23,16 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import DateTimePicker from "./components/DateTimePicker";
-import DatePicker from "./components/DatePicker";
-import TimePicker from "./components/TimePicker";
-import MonthPicker from "./components/MonthPicker";
-import InlineDateTimePicker from "./components/InlineDateTimePicker";
-import InlineDatePicker from "./components/InlineDatePicker";
-import InlineTimePicker from "./components/InlineTimePicker";
-import InlineMonthPicker from "./components/InlineMonthPicker";
+/**
+ * @author 67726e
+ * @see https://github.com/67726e
+ */
 
-export {
-  DateTimePicker,
-  DatePicker,
-  TimePicker,
-  MonthPicker,
-  InlineDateTimePicker,
-  InlineDatePicker,
-  InlineTimePicker,
-  InlineMonthPicker,
+import React from "react";
+import DatePicker from "./DatePicker";
+
+const InlineDatePicker = function InlineDatePicker({ ...props } = {}) {
+  return <DatePicker inline {...props} />;
 };
+InlineDatePicker.displayName = "InlineDatePicker";
+export default InlineDatePicker;

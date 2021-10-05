@@ -25,6 +25,7 @@ export default () => (
   <DateTimePicker viewDate={moment("1994-08-01")} />
 );`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>

@@ -51,6 +51,7 @@ export default () => {
   );
 };`}
         </PrismCode>
+        Back to <a href="#examples">Examples</a>.
       </div>
       {noHr || <hr />}
     </>
